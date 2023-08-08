@@ -1,0 +1,90 @@
+{
+  "qualityDataAAS": [
+      {
+
+          "id_": "Beispiel_QualityData",
+          "description": "Beispiel",
+          "id_short": "a",
+          "qualityData": {
+            "id_": "QualityDataSubmodel",
+            "description": "string",
+            "id_short": "i",
+            "semantic_id": "http://www.google.de/10",
+            "productionProcedures": [
+              {
+                "description": "string",
+                "id_short": "b",
+                "semantic_id": "http://www.google.de/2",
+                "resource": "string",
+                "process": "string",
+                "features": [
+                  {
+                    "description": "string",
+                    "id_short": "c",
+                    "semantic_id": "http://www.google.de/4",
+                    "qualityFeatureName": [
+                      {
+                        "description": "string",
+                        "id_short": "d",
+                        "semantic_id": "http://www.google.de/5",
+                        "featureType": "string",
+                        "function": "string",
+                        "unit": "string",
+                        "targetValue": 0,
+                        "upperTolerance": 0,
+                        "lowerTolerance": 0,
+                        "warningLimit": 0,
+                        "controlLimit": 0,
+                        "inspectionEquipement": "string",
+                        "references": [
+                          {
+                            "description": "string",
+                            "id_short": "e",
+                            "semantic_id": "http://www.google.de/6",
+                            "point": "string",
+                            "line": "string",
+                            "surface": "string",
+                            "axis": "string"
+                          }
+                        ],
+                        "sampleBatch": [
+                          {
+                            "description": "string",
+                            "id_short": "f",
+                            "semantic_id": "http://www.google.de/7",
+                            "sampleSize": 0,
+                            "sampleData": [
+                              {
+                                "description": "string",
+                                "id_short": "g",
+                                "semantic_id": "http://www.google.de/8",
+                                "sampleNumber": 0,
+                                "sampleDate": "string",
+                                "partCounter": 0,
+                                "result": [
+                                  {
+                                    "description": "string",
+                                    "id_short": "h",
+                                    "semantic_id": "http://www.google.de/9",
+                                    "value": 0,
+                                    "measurementDate": "string",
+                                    "uppertol": 0,
+                                    "lowertol": 0,
+                                    "nominal": 0,
+                                    "resultCheck": true
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+      }
+  ]
+}
