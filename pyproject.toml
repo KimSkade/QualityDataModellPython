@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "aas2openapi"
+version = "0.1.1"
+description = ""
+authors = ["SebBehrendt"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.9"
+basyx-python-sdk= { git = "https://github.com/eclipse-basyx/basyx-python-sdk.git", rev="ab298a769b446d162b35fa4a8039713cc71371b1" }
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+fastapi = "^0.97.0"
+openapi-python-client = "^0.14.1"
+ba-syx-aas-repository-client = {path = "ba-syx-aas-repository-client"}
+ba-syx-submodel-repository-client = {path = "ba-syx-submodel-repository-client"}
+python-dotenv = "^1.0.0"
+strawberry-graphql = {extras = ["debug-server"], version = "^0.199.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
