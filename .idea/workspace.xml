@@ -4,123 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="hinzufügen .env-Datei">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/delete_asset_administration_shell_by_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/delete_submodel_reference_by_id_aas_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_all_asset_administration_shells.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_all_submodel_references_aas_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_asset_administration_shell_by_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_asset_information_aas_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/post_asset_administration_shell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/post_submodel_reference_aas_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/put_asset_administration_shell_by_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/put_asset_information_aas_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/administrative_information.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/asset_administration_shell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/asset_information.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/asset_information_asset_kind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/data_specification_content.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/embedded_data_specification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/extension.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/extension_value_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/get_all_asset_administration_shells_limit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/get_all_submodel_references_aas_repository_limit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/key_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/lang_string_name_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/lang_string_text_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/message_message_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/reference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/reference_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/specific_asset_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/poetry.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/delete_submodel_by_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/delete_submodel_element_by_path_submodel_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_all_submodel_elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_all_submodels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_by_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_by_id_metadata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_by_id_value_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_element_by_path_submodel_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_element_by_path_value_only_submodel_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/patch_submodel_element_by_path_value_only_submodel_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/post_submodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/post_submodel_element_by_path_submodel_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/post_submodel_element_submodel_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/put_submodel_by_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/administrative_information.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/data_specification_content.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/embedded_data_specification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/extension.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/extension_value_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodel_elements_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodel_elements_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodel_elements_limit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodels_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodels_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodels_limit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_metadata_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_value_only_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_value_only_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_submodel_repo_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_submodel_repo_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_value_only_submodel_repo_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_value_only_submodel_repo_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/key.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/key_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/lang_string_name_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/lang_string_text_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/message_message_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/patch_submodel_element_by_path_value_only_submodel_repo_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/post_submodel_element_by_path_submodel_repo_extent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/post_submodel_element_by_path_submodel_repo_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/put_submodel_by_id_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/qualifier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/qualifier_kind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/qualifier_value_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/reference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/reference_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_element_value.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_kind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_value_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_value_only_values_only_map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/einfacherTestToServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test123.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testToServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/testToServer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +56,29 @@
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.einfacherTestToServer">
+    <configuration name="einfacherTestToServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QualityDataModellPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/einfacherTestToServer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testToServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.einfacherTestToServer" />
         <item itemvalue="Python.testToServer" />
       </list>
     </recent_temporary>
@@ -210,6 +121,9 @@
       <workItem from="1691580896127" duration="1332000" />
       <workItem from="1691587397991" duration="1816000" />
       <workItem from="1691593303523" duration="260000" />
+      <workItem from="1691654655573" duration="1474000" />
+      <workItem from="1691751259674" duration="2687000" />
+      <workItem from="1691994966563" duration="547000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -227,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691581137870</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="docker">
+      <option name="closed" value="true" />
+      <created>1691654721511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691654721511</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,9 +158,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test Server" />
     <MESSAGE value="hinzufügen .env-Datei" />
-    <option name="LAST_COMMIT_MESSAGE" value="hinzufügen .env-Datei" />
+    <MESSAGE value="docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1691588655671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1691995358642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1691751702271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

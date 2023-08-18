@@ -3,7 +3,7 @@ from testQualityData import createAASQualityDatafromKMG
 from aas2openapi.middleware import Middleware
 import basyx.aas.adapter.json.json_serialization
 import uvicorn
-
+from aas2openapi.models import base
 
 dateipfad = "C:\\Users\\kim0_\\Desktop\\Masterarbeit\\PruefplanValidierungsbauteil1_16.txt"
 breakpoint = "END"
@@ -18,7 +18,7 @@ with open("simple_aas_and_submodels.json", "w", encoding="utf-8") as json_file:
 middleware = Middleware()
 middleware.load_pydantic_model_instances([example_QualityDataAAS])
 middleware.generate_rest_api()
-middleware.generate_graphql_api()
+#  middleware.generate_graphql_api()
 
 app = middleware.app
 uvicorn.run(app)
