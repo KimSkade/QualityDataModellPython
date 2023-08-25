@@ -1,5 +1,4 @@
 import aas2openapi
-from testQualityData import createAASQualityDatafromKMG
 from aas2openapi.middleware import Middleware
 import basyx.aas.adapter.json.json_serialization
 import uvicorn
