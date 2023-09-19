@@ -45,3 +45,4 @@ middleware.generate_rest_api()
 
 app = middleware.app
 uvicorn.run(app)
+

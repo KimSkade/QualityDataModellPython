@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/procedure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/procedure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/processAttributes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/processModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/resource.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testProcedure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/einfacherTestToServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/einfacherTestToServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procedure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/qualityData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qualityDataListen.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/qualityDataListen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testQualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testQualityData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +39,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2TiMvnDGD7QqphOKZtYrp35gzT8" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -40,30 +50,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Johannes/QualityDataModellPython",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Johannes/QualityDataModellPython&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kim0_\QualityDataModellPython\models" />
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.procedure">
+  <component name="RunManager" selected="Python.einfacherTestToServer">
     <configuration name="einfacherTestToServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="procedure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="processAttributes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,7 +110,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/procedure.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\kim0_\QualityDataModellPython\models\processAttributes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testPost" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QualityDataModellPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testPost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testProcedure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QualityDataModellPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testProcedure.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,9 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.procedure" />
         <item itemvalue="Python.einfacherTestToServer" />
+        <item itemvalue="Python.testPost" />
+        <item itemvalue="Python.testProcedure" />
         <item itemvalue="Python.testToServer" />
+        <item itemvalue="Python.processAttributes" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +212,12 @@
       <workItem from="1691751259674" duration="2687000" />
       <workItem from="1691994966563" duration="547000" />
       <workItem from="1692947328203" duration="2924000" />
+      <workItem from="1694698481853" duration="6397000" />
+      <workItem from="1694768031463" duration="6191000" />
+      <workItem from="1694954514244" duration="1641000" />
+      <workItem from="1695028261780" duration="4181000" />
+      <workItem from="1695039012795" duration="10332000" />
+      <workItem from="1695123503425" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -192,9 +255,23 @@
     <MESSAGE value="docker" />
     <option name="LAST_COMMIT_MESSAGE" value="docker" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/procedure.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1692947801497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1691751702271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695132798612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$procedure.coverage" NAME="procedure Coverage Results" MODIFIED="1692950271521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1695044360358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$processAttributes.coverage" NAME="processAttributes Coverage Results" MODIFIED="1694768688771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure.coverage" NAME="testProcedure Coverage Results" MODIFIED="1695049051382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testPost.coverage" NAME="testPost Coverage Results" MODIFIED="1695129017155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
