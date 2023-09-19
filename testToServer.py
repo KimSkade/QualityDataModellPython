@@ -18,7 +18,7 @@ with open("simple_aas_and_submodels.json", "w", encoding="utf-8") as json_file:
 middleware = Middleware()
 middleware.load_pydantic_model_instances([example_QualityDataAAS])
 middleware.generate_rest_api()
-#  middleware.generate_graphql_api()
+# middleware.generate_graphql_api()
 
 app = middleware.app
 uvicorn.run(app)

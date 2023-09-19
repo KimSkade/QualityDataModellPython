@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/procedure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/processAttributes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/processModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProcedure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einfacherTestToServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/einfacherTestToServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/procedure.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/qualityData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qualityDataListen.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/qualityDataListen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testQualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testQualityData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testToServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/testToServer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,11 +258,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695132798612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1692349024000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testPost.coverage" NAME="testPost Coverage Results" MODIFIED="1695129017155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$procedure.coverage" NAME="procedure Coverage Results" MODIFIED="1692950271521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1695044360358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$processAttributes.coverage" NAME="processAttributes Coverage Results" MODIFIED="1694768688771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure.coverage" NAME="testProcedure Coverage Results" MODIFIED="1695049051382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testPost.coverage" NAME="testPost Coverage Results" MODIFIED="1695129017155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695134017173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
