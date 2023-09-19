@@ -32,7 +32,6 @@ example_product = Product(
     ),
 )
 
-
 obj_store = aas2openapi.convert_pydantic_model_to_aas(example_product)
 with open("simple_aas_and_submodels.json", "w", encoding="utf-8") as json_file:
     basyx.aas.adapter.json.write_aas_json_file(json_file, obj_store)
@@ -41,7 +40,6 @@ with open("simple_aas_and_submodels.json", "w", encoding="utf-8") as json_file:
 middleware = Middleware()
 middleware.load_pydantic_model_instances([example_product])
 middleware.generate_rest_api()
-#  middleware.generate_graphql_api()
 
 app = middleware.app
 uvicorn.run(app)
