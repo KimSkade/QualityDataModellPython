@@ -1,6 +1,5 @@
 import subprocess
 import json
-from testExample import Product, ProcessModel, BillOfMaterial
 
 
 # convert pydantic model to JSON

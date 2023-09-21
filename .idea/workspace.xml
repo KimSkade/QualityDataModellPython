@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testStartAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/postRequest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/startAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/testExample.py" afterDir="false" />
@@ -61,8 +61,9 @@
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kim0_\QualityDataModellPython\models" />
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
+      <recent name="C:\Users\kim0_\QualityDataModellPython\test" />
+      <recent name="C:\Users\kim0_\QualityDataModellPython\models" />
     </key>
   </component>
   <component name="RunManager" selected="Python.testUmwandlungJSON">
@@ -145,7 +146,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testProcedure.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\kim0_\QualityDataModellPython\testProcedure.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,7 +219,7 @@
       <workItem from="1695039012795" duration="10332000" />
       <workItem from="1695123503425" duration="6233000" />
       <workItem from="1695219157021" duration="9506000" />
-      <workItem from="1695276027194" duration="6683000" />
+      <workItem from="1695276027194" duration="7648000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -276,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695281611242</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="API mit methode starten">
+      <option name="closed" value="true" />
+      <created>1695282890468</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695282890468</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +298,8 @@
     <MESSAGE value="post request" />
     <MESSAGE value="Anpassung Umwandlung in JSON für POST Request" />
     <MESSAGE value="poatRequest methoden; aufgeräumt" />
-    <option name="LAST_COMMIT_MESSAGE" value="poatRequest methoden; aufgeräumt" />
+    <MESSAGE value="API mit methode starten" />
+    <option name="LAST_COMMIT_MESSAGE" value="API mit methode starten" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

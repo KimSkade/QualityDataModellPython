@@ -1,8 +1,7 @@
 import aas2openapi
-from aas2openapi.middleware import Middleware
 import basyx.aas.adapter.json.json_serialization
 import uvicorn
-from testExample import example_product
+from aas2openapi.middleware import Middleware
 from aas2openapi.models import AAS
 
 
@@ -12,7 +11,7 @@ def start_api_with_pydantic_model(aas_model: AAS, dateipfad_json: str):
         basyx.aas.adapter.json.write_aas_json_file(json_file, obj_store)
 
     middleware = Middleware()
-    middleware.load_pydantic_model_instances([example_product])
+    middleware.load_pydantic_model_instances([aas_model])
     middleware.generate_rest_api()
 
     app = middleware.app
