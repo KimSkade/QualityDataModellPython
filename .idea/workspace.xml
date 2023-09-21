@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testExample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testUmwandlungJSON.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einfacherTestToServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/einfacherTestToServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/postRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/postRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +215,7 @@
       <workItem from="1695039012795" duration="10332000" />
       <workItem from="1695123503425" duration="6233000" />
       <workItem from="1695219157021" duration="9506000" />
-      <workItem from="1695276027194" duration="1620000" />
+      <workItem from="1695276027194" duration="2295000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -253,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695237477139</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Anpassung Umwandlung in JSON für POST Request">
+      <option name="closed" value="true" />
+      <created>1695277954240</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695277954240</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +268,8 @@
     <MESSAGE value="hinzufügen .env-Datei" />
     <MESSAGE value="docker" />
     <MESSAGE value="post request" />
-    <option name="LAST_COMMIT_MESSAGE" value="post request" />
+    <MESSAGE value="Anpassung Umwandlung in JSON für POST Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anpassung Umwandlung in JSON für POST Request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -278,7 +283,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testUmwandlungJSON.coverage" NAME="testUmwandlungJSON Coverage Results" MODIFIED="1695277590949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testUmwandlungJSON.coverage" NAME="testUmwandlungJSON Coverage Results" MODIFIED="1695277801852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695235232322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$procedure.coverage" NAME="procedure Coverage Results" MODIFIED="1692950271521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1695044360358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

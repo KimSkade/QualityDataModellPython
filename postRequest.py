@@ -2,7 +2,7 @@ import subprocess
 import json
 from testExample import Product, ProcessModel, BillOfMaterial
 
-# Definiere die Daten
+# pydantic model
 data = Product(
     id_="bc2119e48d0",
     process_model=ProcessModel(
@@ -14,12 +14,14 @@ data = Product(
     ),
 )
 
+
+# convert pydantic model to dict
 data_dict = data.dict()
-# Wandele die Python-Daten in ein JSON-Format um
+# convert dict to JSON
 json_data = json.dumps(data_dict)
 
 
-# Definiere den Befehl als Liste von Zeichenfolgen und verwende das JSON-Datenobjekt
+# POST-Request
 command = [
     'curl',
     '-X', 'POST',
@@ -28,8 +30,6 @@ command = [
     'http://127.0.0.1:8000/Product/'
 ]
 
-
-# Führe den Befehl aus
 try:
     subprocess.run(command, check=True)
 except subprocess.CalledProcessError as e:
