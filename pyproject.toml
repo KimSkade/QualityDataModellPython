@@ -4,7 +4,7 @@ version = "0.1.1"
 description = ""
 authors = ["SebBehrendt"]
 license = "MIT License"
-readme = "README.md"
+#readme = "hallo"
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -15,5 +15,7 @@ def start_api_with_pydantic_model(aas_model: AAS, dateipfad_json: str):
     middleware.generate_rest_api()
 
     app = middleware.app
-    uvicorn.run(app)
+    uvicorn.run(app, host='0.0.0.0', port=8000)
+
+
 
