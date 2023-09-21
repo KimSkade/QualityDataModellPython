@@ -60,5 +60,3 @@ class QualityData(Submodel):
 
 class QualityDataAAS(AAS):
     qualityData: QualityData
-
-

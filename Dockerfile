@@ -10,12 +10,12 @@ COPY ba-syx-aas-repository-client/ /app/ba-syx-aas-repository-client
 COPY ba-syx-submodel-repository-client/ /app/ba-syx-submodel-repository-client
 COPY pyproject.toml poetry.lock /app/
 
-COPY . /app
-
 # Install dependencies using Poetry
 RUN pip install poetry \
     && poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
+
+COPY . /app
 
 EXPOSE 8000
 
