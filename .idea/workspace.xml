@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/KMGdata_to_QualityData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testPOSTrequest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testStartAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einfacherTestToServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/startAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/postRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testQualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testQualityData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testToServer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testUmwandlungJSON.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/startAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/testExample.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +218,7 @@
       <workItem from="1695039012795" duration="10332000" />
       <workItem from="1695123503425" duration="6233000" />
       <workItem from="1695219157021" duration="9506000" />
-      <workItem from="1695276027194" duration="5202000" />
+      <workItem from="1695276027194" duration="6683000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -273,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695278560642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="poatRequest methoden; aufgeräumt">
+      <option name="closed" value="true" />
+      <created>1695281611242</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695281611242</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +288,8 @@
     <MESSAGE value="docker" />
     <MESSAGE value="post request" />
     <MESSAGE value="Anpassung Umwandlung in JSON für POST Request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anpassung Umwandlung in JSON für POST Request" />
+    <MESSAGE value="poatRequest methoden; aufgeräumt" />
+    <option name="LAST_COMMIT_MESSAGE" value="poatRequest methoden; aufgeräumt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

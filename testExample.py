@@ -18,7 +18,7 @@ class Product(models.AAS):
 
 
 example_product = Product(
-    id_="TEST",
+    id_="TESTneu",
     process_model=ProcessModel(
         id_="a8cd10ed",
         processes=["join", "screw"], result_check=False,
