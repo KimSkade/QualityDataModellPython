@@ -18,4 +18,4 @@ RUN pip install poetry \
 
 EXPOSE 8000
 
-CMD ["python", "einfacherTestToServer.py"]
+CMD ["python", "startAPI.py"]
