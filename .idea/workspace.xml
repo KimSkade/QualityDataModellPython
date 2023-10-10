@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="Fehlerhaft mit Qualitydata und neue Version aas2openApi 0.1.8">
-      <change afterPath="$PROJECT_DIR$/qualityLogic.py" afterDir="false" />
+    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="client aktualisiert, qualityLogic abstrakte Methoden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/KMGdata_to_QualityData_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/KMGdata_to_QualityData_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/postClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/postClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/post_item_quality_data_aas_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/post_item_quality_data_aas_post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_put.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_put.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_quality_data_put.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_quality_data_put.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data_aas.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data_aas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testQualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testQualityData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testStartAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/testStartAPI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.postClient" />
+        <item itemvalue="Python.testQualityData" />
         <item itemvalue="Python.testStartAPI" />
         <item itemvalue="Python.startAPI" />
         <item itemvalue="Python.KMGdata_to_QualityData" />
-        <item itemvalue="Python.testQualityData" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +226,7 @@
       <workItem from="1695123503425" duration="6233000" />
       <workItem from="1695219157021" duration="9506000" />
       <workItem from="1695276027194" duration="7648000" />
-      <workItem from="1696947195348" duration="2384000" />
+      <workItem from="1696947195348" duration="4790000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -297,7 +300,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696945113329</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="client aktualisiert, qualityLogic abstrakte Methoden">
+      <option name="closed" value="true" />
+      <created>1696949643381</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696949643381</updated>
+    </task>
+    <task id="LOCAL-00011" summary="client aktualisiert, qualityLogic abstrakte Methoden">
+      <option name="closed" value="true" />
+      <created>1696949671638</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696949671638</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +331,8 @@
     <MESSAGE value="poatRequest methoden; aufgeräumt" />
     <MESSAGE value="API mit methode starten" />
     <MESSAGE value="Fehlerhaft mit Qualitydata und neue Version aas2openApi 0.1.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fehlerhaft mit Qualitydata und neue Version aas2openApi 0.1.8" />
+    <MESSAGE value="client aktualisiert, qualityLogic abstrakte Methoden" />
+    <option name="LAST_COMMIT_MESSAGE" value="client aktualisiert, qualityLogic abstrakte Methoden" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -337,9 +357,9 @@
     <SUITE FILE_PATH="coverage/QualityDataModellPython$processAttributes.coverage" NAME="processAttributes Coverage Results" MODIFIED="1694768688771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695222660307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testStartAPI.coverage" NAME="testStartAPI Coverage Results" MODIFIED="1696947281113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testQualityData.coverage" NAME="testQualityData Coverage Results" MODIFIED="1696937731624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testQualityData.coverage" NAME="testQualityData Coverage Results" MODIFIED="1696951445085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$procedure.coverage" NAME="procedure Coverage Results" MODIFIED="1692950271521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$postClient.coverage" NAME="postClient Coverage Results" MODIFIED="1696947630508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$postClient.coverage" NAME="postClient Coverage Results" MODIFIED="1696951837105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure.coverage" NAME="testProcedure Coverage Results" MODIFIED="1695049051382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testtestProcedure.coverage" NAME="testtestProcedure Coverage Results" MODIFIED="1695289363127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

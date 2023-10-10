@@ -76,8 +76,8 @@ def sync_detailed(
 
     Args:
         json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "qualityData": {"id_": "QualityDataSubmodel", "description":
-            "xyz", "id_short": "QualityData", "semantic_id": "http://www.google.de/1",
+            "id_short": "QualityDataAAS", "qualityData": {"id_": "Submodel", "description": "xyz",
+            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
             "productionProcedures": [{"id_short": "ProductionProcedures", "description": "xyz",
             "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
             "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
@@ -126,8 +126,8 @@ def sync(
 
     Args:
         json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "qualityData": {"id_": "QualityDataSubmodel", "description":
-            "xyz", "id_short": "QualityData", "semantic_id": "http://www.google.de/1",
+            "id_short": "QualityDataAAS", "qualityData": {"id_": "Submodel", "description": "xyz",
+            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
             "productionProcedures": [{"id_short": "ProductionProcedures", "description": "xyz",
             "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
             "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
@@ -169,8 +169,8 @@ async def asyncio_detailed(
 
     Args:
         json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "qualityData": {"id_": "QualityDataSubmodel", "description":
-            "xyz", "id_short": "QualityData", "semantic_id": "http://www.google.de/1",
+            "id_short": "QualityDataAAS", "qualityData": {"id_": "Submodel", "description": "xyz",
+            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
             "productionProcedures": [{"id_short": "ProductionProcedures", "description": "xyz",
             "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
             "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
@@ -217,8 +217,8 @@ async def asyncio(
 
     Args:
         json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "qualityData": {"id_": "QualityDataSubmodel", "description":
-            "xyz", "id_short": "QualityData", "semantic_id": "http://www.google.de/1",
+            "id_short": "QualityDataAAS", "qualityData": {"id_": "Submodel", "description": "xyz",
+            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
             "productionProcedures": [{"id_short": "ProductionProcedures", "description": "xyz",
             "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
             "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":

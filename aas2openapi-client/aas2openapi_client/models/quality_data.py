@@ -15,7 +15,7 @@ T = TypeVar("T", bound="QualityData")
 class QualityData:
     """
     Example:
-        {"id_": "QualityDataSubmodel", "description": "xyz", "id_short": "QualityData", "semantic_id":
+        {"id_": "Submodel", "description": "xyz", "id_short": "QualityDataSubmodel", "semantic_id":
             "http://www.google.de/1", "productionProcedures": [{"id_short": "ProductionProcedures", "description": "xyz",
             "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process": "Patzhalter", "features":
             [{"id_short": "Features", "description": "xyz", "semantic_id": "http://www.google.de/1", "qualityFeatureName":

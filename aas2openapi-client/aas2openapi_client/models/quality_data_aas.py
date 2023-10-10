@@ -15,8 +15,8 @@ T = TypeVar("T", bound="QualityDataAAS")
 class QualityDataAAS:
     """
     Example:
-        {"id_": "QualityDataAAS", "description": "xyz", "id_short": "QualityDataAAS", "qualityData": {"id_":
-            "QualityDataSubmodel", "description": "xyz", "id_short": "QualityData", "semantic_id": "http://www.google.de/1",
+        {"id_": "QualityDataAAS", "description": "xyz", "id_short": "QualityDataAAS", "qualityData": {"id_": "Submodel",
+            "description": "xyz", "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
             "productionProcedures": [{"id_short": "ProductionProcedures", "description": "xyz", "semantic_id":
             "http://www.google.de/1", "resource": "Platzhalter", "process": "Patzhalter", "features": [{"id_short":
             "Features", "description": "xyz", "semantic_id": "http://www.google.de/1", "qualityFeatureName": [{"id_short":
@@ -34,8 +34,8 @@ class QualityDataAAS:
 
     Attributes:
         id (str):
-        quality_data (QualityData):  Example: {"id_": "QualityDataSubmodel", "description": "xyz", "id_short":
-            "QualityData", "semantic_id": "http://www.google.de/1", "productionProcedures": [{"id_short":
+        quality_data (QualityData):  Example: {"id_": "Submodel", "description": "xyz", "id_short":
+            "QualityDataSubmodel", "semantic_id": "http://www.google.de/1", "productionProcedures": [{"id_short":
             "ProductionProcedures", "description": "xyz", "semantic_id": "http://www.google.de/1", "resource":
             "Platzhalter", "process": "Patzhalter", "features": [{"id_short": "Features", "description": "xyz",
             "semantic_id": "http://www.google.de/1", "qualityFeatureName": [{"id_short": "qualityFeatureName1",
