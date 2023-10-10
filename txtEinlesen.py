@@ -32,7 +32,4 @@ def getValuefromColumName(dateipfad, spaltenname, zeilennummer):
 
 
 
-dateipfad = "C:\\Users\\kim0_\\Desktop\\Masterarbeit\\PruefplanValidierungsbauteil1_16.txt"
-
-#  print(getValuefromColumName(dateipfad, "nominal", 2))
 

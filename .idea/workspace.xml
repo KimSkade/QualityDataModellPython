@@ -5,7 +5,174 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/aas2openapi-client/KMGdata_to_QualityData_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aas2openapi-client/PruefplanValidierungsbauteil1_16.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KMGdata_to_QualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/KMGdata_to_QualityData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/ClientTestFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/default/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/default/root_get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/postClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/delete_item_product_item_id_delete.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/delete_item_product_item_id_process_model_delete.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/get_item_product_item_id_bill_of_material_get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/get_item_product_item_id_get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/get_item_product_item_id_process_model_get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/get_items_product_get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/post_item_product_item_id_process_model_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/post_item_product_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/put_item_product_item_id_bill_of_material_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/put_item_product_item_id_process_model_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/product/put_item_product_item_id_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/bill_of_material.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/http_validation_error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/process_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/put_item_product_item_id_bill_of_material_put_response_put_item_product_item_id_billofmaterial_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/put_item_product_item_id_process_model_put_response_put_item_product_item_id_processmodel_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/put_item_product_item_id_put_response_put_item_product_item_id_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/validation_error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/py.typed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/client/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ba-syx-aas-repository-client/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/client/aas_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/client/submodel_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/convert/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ba-syx-submodel-repository-client/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/convert/convert_aas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/convert/convert_pydantic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/middleware/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/middleware/graphql_routers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/middleware/middleware.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/middleware/rest_routers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/models/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/util/client_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi/util/convert_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/delete_asset_administration_shell_by_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/delete_submodel_reference_by_id_aas_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_all_asset_administration_shells.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_all_submodel_references_aas_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_asset_administration_shell_by_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/get_asset_information_aas_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/post_asset_administration_shell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/post_submodel_reference_aas_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/put_asset_administration_shell_by_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/api/asset_administration_shell_repository_api/put_asset_information_aas_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/administrative_information.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/asset_administration_shell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/asset_information.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/asset_information_asset_kind.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/data_specification_content.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/embedded_data_specification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/extension.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/extension_value_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/get_all_asset_administration_shells_limit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/get_all_submodel_references_aas_repository_limit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/key.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/key_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/lang_string_name_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/lang_string_text_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/message_message_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/reference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/reference_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/resource.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/result.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/models/specific_asset_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/py.typed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/ba_syx_aas_repository_client/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/poetry.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-aas-repository-client/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/delete_submodel_by_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/delete_submodel_element_by_path_submodel_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_all_submodel_elements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_all_submodels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_by_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_by_id_metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_by_id_value_only.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_element_by_path_submodel_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/get_submodel_element_by_path_value_only_submodel_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/patch_submodel_element_by_path_value_only_submodel_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/post_submodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/post_submodel_element_by_path_submodel_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/post_submodel_element_submodel_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/api/submodel_repository_api/put_submodel_by_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/administrative_information.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/data_specification_content.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/embedded_data_specification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/extension.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/extension_value_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodel_elements_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodel_elements_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodel_elements_limit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodels_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodels_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_all_submodels_limit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_metadata_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_value_only_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_by_id_value_only_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_submodel_repo_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_submodel_repo_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_value_only_submodel_repo_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/get_submodel_element_by_path_value_only_submodel_repo_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/key.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/key_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/lang_string_name_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/lang_string_text_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/message_message_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/patch_submodel_element_by_path_value_only_submodel_repo_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/post_submodel_element_by_path_submodel_repo_extent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/post_submodel_element_by_path_submodel_repo_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/put_submodel_by_id_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/qualifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/qualifier_kind.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/qualifier_value_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/reference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/reference_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/result.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_element.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_element_value.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_kind.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_value_only.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/models/submodel_value_only_values_only_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/py.typed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/ba_syx_submodel_repository_client/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ba-syx-submodel-repository-client/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_aas_and_submodels.json" beforeDir="false" afterPath="$PROJECT_DIR$/simple_aas_and_submodels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testQualityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testQualityData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testStartAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/testStartAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txtEinlesen.py" beforeDir="false" afterPath="$PROJECT_DIR$/txtEinlesen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,33 +204,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Johannes/QualityDataModellPython&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Johannes/QualityDataModellPython/aas2openapi-client",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Johannes\QualityDataModellPython\aas2openapi-client" />
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Johannes\QualityDataModellPython" />
+      <recent name="C:\Users\Johannes\QualityDataModellPython\aas2openapi-client" />
+      <recent name="C:\Users\Johannes\QualityDataModellPython\aas2openapi-client\aas2openapi_client" />
       <recent name="C:\Users\kim0_\QualityDataModellPython" />
       <recent name="C:\Users\kim0_\QualityDataModellPython\test" />
-      <recent name="C:\Users\kim0_\QualityDataModellPython\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.testPOSTrequest">
-    <configuration name="postRequest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.postClient">
+    <configuration name="KMGdata_to_QualityData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +246,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/postRequest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KMGdata_to_QualityData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +255,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="startAPI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="postClient" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,12 +263,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aas2openapi-client" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\kim0_\QualityDataModellPython\startAPI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aas2openapi-client/postClient.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +299,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testPost" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testQualityData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +312,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testPost.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testQualityData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +321,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testUmwandlungJSON" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testStartAPI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="QualityDataModellPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,7 +334,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testUmwandlungJSON.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testStartAPI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +353,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.postClient" />
+        <item itemvalue="Python.KMGdata_to_QualityData" />
+        <item itemvalue="Python.testStartAPI" />
+        <item itemvalue="Python.testQualityData" />
         <item itemvalue="Python.testPOSTrequest" />
-        <item itemvalue="Python.testUmwandlungJSON" />
-        <item itemvalue="Python.startAPI" />
-        <item itemvalue="Python.postRequest" />
-        <item itemvalue="Python.testPost" />
       </list>
     </recent_temporary>
   </component>
@@ -309,17 +479,20 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure__1_.coverage" NAME="testProcedure (1) Coverage Results" MODIFIED="1695286554498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testStartAPI.coverage" NAME="testStartAPI Coverage Results" MODIFIED="1695294845858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testUmwandlungJSON.coverage" NAME="testUmwandlungJSON Coverage Results" MODIFIED="1695280329833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695235232322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testtestProcedure.coverage" NAME="testtestProcedure Coverage Results" MODIFIED="1695289363127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$procedure.coverage" NAME="procedure Coverage Results" MODIFIED="1692950271521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1695044360358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testPOSTrequest.coverage" NAME="testPOSTrequest Coverage Results" MODIFIED="1695299676474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$processAttributes.coverage" NAME="processAttributes Coverage Results" MODIFIED="1694768688771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$postRequest.coverage" NAME="postRequest Coverage Results" MODIFIED="1695234224922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure.coverage" NAME="testProcedure Coverage Results" MODIFIED="1695049051382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testToServer.coverage" NAME="testToServer Coverage Results" MODIFIED="1692349024000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure__1_.coverage" NAME="testProcedure (1) Coverage Results" MODIFIED="1695286554498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$KMGdata_to_QualityData.coverage" NAME="KMGdata_to_QualityData Coverage Results" MODIFIED="1696942204326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testPost.coverage" NAME="testPost Coverage Results" MODIFIED="1695129017155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testUmwandlungJSON.coverage" NAME="testUmwandlungJSON Coverage Results" MODIFIED="1695280329833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$processAttributes.coverage" NAME="processAttributes Coverage Results" MODIFIED="1694768688771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695222660307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testStartAPI.coverage" NAME="testStartAPI Coverage Results" MODIFIED="1696941764848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testQualityData.coverage" NAME="testQualityData Coverage Results" MODIFIED="1696937731624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$procedure.coverage" NAME="procedure Coverage Results" MODIFIED="1692950271521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$postClient.coverage" NAME="postClient Coverage Results" MODIFIED="1696945013599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testProcedure.coverage" NAME="testProcedure Coverage Results" MODIFIED="1695049051382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$testtestProcedure.coverage" NAME="testtestProcedure Coverage Results" MODIFIED="1695289363127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
