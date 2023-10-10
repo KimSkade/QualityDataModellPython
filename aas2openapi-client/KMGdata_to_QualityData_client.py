@@ -1,6 +1,8 @@
 from models import qualityDataListen
 from txtEinlesen import getValuefromColumName
+
 from aas2openapi_client import models
+
 
 def createAASQualityDatafromKMG(dateipfad, breakpoint):
     i = 1
@@ -44,7 +46,7 @@ def createAASQualityDatafromKMG(dateipfad, breakpoint):
             semantic_id="http://www.google.de/1",
             description="xyz",
             sampleSize=1,
-            sampleData=sampleDatas
+            sampleData=sampleDatas,
         )
         sampleBatchs.append(sampleBatch)
 
@@ -56,7 +58,7 @@ def createAASQualityDatafromKMG(dateipfad, breakpoint):
             point="Platzhalter point",
             line="Platzhalter line",
             surface="Platzhalter surface",
-            axis="Platzhalter axis"
+            axis="Platzhalter axis",
         )
         references.append(reference)
 
@@ -75,7 +77,7 @@ def createAASQualityDatafromKMG(dateipfad, breakpoint):
             controlLimit=1,
             inspectionEquipement="PlatzhalterEquipment",
             references=references,
-            sampleBatch=sampleBatchs
+            sampleBatch=sampleBatchs,
         )
         qualityFeatureNames.append(qualityFeatureName)
         i += 1
@@ -86,7 +88,7 @@ def createAASQualityDatafromKMG(dateipfad, breakpoint):
         id_short="Features",
         semantic_id="http://www.google.de/1",
         description="xyz",
-        qualityFeatureName=qualityFeatureNames
+        qualityFeatureName=qualityFeatureNames,
     )
     features = []
     features.append(feature)
@@ -98,7 +100,7 @@ def createAASQualityDatafromKMG(dateipfad, breakpoint):
         description="xyz",
         resource="Platzhalter",
         process="Patzhalter",
-        features=features
+        features=features,
     )
     productionProcedures = []
     productionProcedures.append(productionProcedure)
@@ -109,15 +111,12 @@ def createAASQualityDatafromKMG(dateipfad, breakpoint):
         id_short="QualityData",
         semantic_id="http://www.google.de/1",
         description="xyz",
-        productionProcedures=productionProcedures
+        productionProcedures=productionProcedures,
     )
 
     #  QualityDataAAS
     qualityDataAAS = qualityDataListen.QualityDataAAS(
-        description="xyz",
-        id_short="QualityDataAAS",
-        id_="QualityDataAAS",
-        qualityData=qualityDataSubmodel
+        description="xyz", id_short="QualityDataAAS", id_="QualityDataAAS", qualityData=qualityDataSubmodel
     )
 
     return qualityDataAAS
@@ -166,7 +165,7 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
         semantic_id="http://www.google.de/1",
         description="xyz",
         sample_size=1,
-        sample_data=sampleDatas
+        sample_data=sampleDatas,
     )
     sampleBatchs.append(sampleBatch)
 
@@ -178,7 +177,7 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
         point="Platzhalter point",
         line="Platzhalter line",
         surface="Platzhalter surface",
-        axis="Platzhalter axis"
+        axis="Platzhalter axis",
     )
     references.append(reference)
 
@@ -197,7 +196,7 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
         control_limit=1,
         inspection_equipement="PlatzhalterEquipment",
         references=references,
-        sample_batch=sampleBatchs
+        sample_batch=sampleBatchs,
     )
     qualityFeatureNames.append(qualityFeatureName)
 
@@ -208,7 +207,7 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
         id_short="Features",
         semantic_id="http://www.google.de/1",
         description="xyz",
-        quality_feature_name=qualityFeatureNames
+        quality_feature_name=qualityFeatureNames,
     )
     features = []
     features.append(feature)
@@ -220,7 +219,7 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
         description="xyz",
         resource="Platzhalter",
         process="Patzhalter",
-        features=features
+        features=features,
     )
     productionProcedures = []
     productionProcedures.append(productionProcedure)
@@ -231,15 +230,12 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
         id_short="QualityData",
         semantic_id="http://www.google.de/1",
         description="xyz",
-        production_procedures=productionProcedures
+        production_procedures=productionProcedures,
     )
 
     #  QualityDataAAS
     qualityDataAAS = models.QualityDataAAS(
-        description="xyz",
-        id_short="QualityDataAAS",
-        id="QualityDataAAS",
-        quality_data=qualityDataSubmodel
+        description="xyz", id_short="QualityDataAAS", id="QualityDataAAS", quality_data=qualityDataSubmodel
     )
 
     return qualityDataAAS
