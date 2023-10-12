@@ -4,23 +4,23 @@ from typing import Optional, List
 
 class Result(SubmodelElementCollection):
     value: float
-    measurementDate: str  # Typ anpassen #Time Stamp
+    measurement_date: str  # Typ anpassen #Time Stamp
     uppertol: float
     lowertol: float
     nominal: float
-    resultCheck: bool
+    result_check: bool
 
 
 class SampleData(SubmodelElementCollection):
-    sampleNumber: int
-    sampleDate: str
-    partCounter: int
+    sample_number: int
+    sample_date: str
+    part_counter: int
     result: List[Result]
 
 
 class SampleBatch(SubmodelElementCollection):
-    sampleSize: int
-    sampleData: List[SampleData]
+    sample_size: int
+    sample_data: List[SampleData]
 
 
 class References(SubmodelElementCollection):
@@ -31,21 +31,21 @@ class References(SubmodelElementCollection):
 
 
 class QualityFeatureName(SubmodelElementCollection):
-    featureType: str
+    feature_type: str
     function: str
     unit: str
-    targetValue: float
-    upperTolerance: float
-    lowerTolerance: float
-    warningLimit: float
-    controlLimit: float
-    inspectionEquipement: str
+    target_value: float
+    upper_tolerance: float
+    lower_tolerance: float
+    warning_limit: float
+    control_limit: float
+    inspection_equipement: str
     references: List[References]
-    sampleBatch: List[SampleBatch]
+    sample_batch: List[SampleBatch]
 
 
 class Features(SubmodelElementCollection):
-    qualityFeatureName: List[QualityFeatureName]
+    quality_feature_name: List[QualityFeatureName]
 
 
 class ProductionProcedures(SubmodelElementCollection):
@@ -55,8 +55,8 @@ class ProductionProcedures(SubmodelElementCollection):
 
 
 class QualityData(Submodel):
-    productionProcedures: List[ProductionProcedures]
+    production_procedures: List[ProductionProcedures]
 
 
 class QualityDataAAS(AAS):
-    qualityData: QualityData
+    quality_data: QualityData

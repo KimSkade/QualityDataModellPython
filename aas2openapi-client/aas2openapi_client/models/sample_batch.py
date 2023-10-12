@@ -46,8 +46,8 @@ class SampleBatch:
         field_dict.update(
             {
                 "id_short": id_short,
-                "sampleSize": sample_size,
-                "sampleData": sample_data,
+                "sample_size": sample_size,
+                "sample_data": sample_data,
             }
         )
         if description is not UNSET:
@@ -64,10 +64,10 @@ class SampleBatch:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
-        sample_size = d.pop("sampleSize")
+        sample_size = d.pop("sample_size")
 
         sample_data = []
-        _sample_data = d.pop("sampleData")
+        _sample_data = d.pop("sample_data")
         for sample_data_item_data in _sample_data:
             sample_data_item = SampleData.from_dict(sample_data_item_data)
 

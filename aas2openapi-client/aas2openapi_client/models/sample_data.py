@@ -52,9 +52,9 @@ class SampleData:
         field_dict.update(
             {
                 "id_short": id_short,
-                "sampleNumber": sample_number,
-                "sampleDate": sample_date,
-                "partCounter": part_counter,
+                "sample_number": sample_number,
+                "sample_date": sample_date,
+                "part_counter": part_counter,
                 "result": result,
             }
         )
@@ -72,11 +72,11 @@ class SampleData:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
-        sample_number = d.pop("sampleNumber")
+        sample_number = d.pop("sample_number")
 
-        sample_date = d.pop("sampleDate")
+        sample_date = d.pop("sample_date")
 
-        part_counter = d.pop("partCounter")
+        part_counter = d.pop("part_counter")
 
         result = []
         _result = d.pop("result")

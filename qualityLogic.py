@@ -39,7 +39,7 @@ class QualityLoop(ABC):
             --> Anomalien/ Ausreißer erkennen/ filtern
             --> auf AAS gespeichert; post_request
         get_request für aktuelle Anlagenparameter, Qualitätsdaten
-        post_request für neue Anlagenparameter
+        post_request für neue Anlagenparameter; neue Anlagenparameter müssen Maschine übergeben werden
         """
         pass
 

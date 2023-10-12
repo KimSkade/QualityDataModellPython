@@ -43,7 +43,7 @@ class Features:
         field_dict.update(
             {
                 "id_short": id_short,
-                "qualityFeatureName": quality_feature_name,
+                "quality_feature_name": quality_feature_name,
             }
         )
         if description is not UNSET:
@@ -61,7 +61,7 @@ class Features:
         id_short = d.pop("id_short")
 
         quality_feature_name = []
-        _quality_feature_name = d.pop("qualityFeatureName")
+        _quality_feature_name = d.pop("quality_feature_name")
         for quality_feature_name_item_data in _quality_feature_name:
             quality_feature_name_item = QualityFeatureName.from_dict(quality_feature_name_item_data)
 

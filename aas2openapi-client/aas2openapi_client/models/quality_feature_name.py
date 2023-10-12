@@ -79,17 +79,17 @@ class QualityFeatureName:
         field_dict.update(
             {
                 "id_short": id_short,
-                "featureType": feature_type,
+                "feature_type": feature_type,
                 "function": function,
                 "unit": unit,
-                "targetValue": target_value,
-                "upperTolerance": upper_tolerance,
-                "lowerTolerance": lower_tolerance,
-                "warningLimit": warning_limit,
-                "controlLimit": control_limit,
-                "inspectionEquipement": inspection_equipement,
+                "target_value": target_value,
+                "upper_tolerance": upper_tolerance,
+                "lower_tolerance": lower_tolerance,
+                "warning_limit": warning_limit,
+                "control_limit": control_limit,
+                "inspection_equipement": inspection_equipement,
                 "references": references,
-                "sampleBatch": sample_batch,
+                "sample_batch": sample_batch,
             }
         )
         if description is not UNSET:
@@ -107,23 +107,23 @@ class QualityFeatureName:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
-        feature_type = d.pop("featureType")
+        feature_type = d.pop("feature_type")
 
         function = d.pop("function")
 
         unit = d.pop("unit")
 
-        target_value = d.pop("targetValue")
+        target_value = d.pop("target_value")
 
-        upper_tolerance = d.pop("upperTolerance")
+        upper_tolerance = d.pop("upper_tolerance")
 
-        lower_tolerance = d.pop("lowerTolerance")
+        lower_tolerance = d.pop("lower_tolerance")
 
-        warning_limit = d.pop("warningLimit")
+        warning_limit = d.pop("warning_limit")
 
-        control_limit = d.pop("controlLimit")
+        control_limit = d.pop("control_limit")
 
-        inspection_equipement = d.pop("inspectionEquipement")
+        inspection_equipement = d.pop("inspection_equipement")
 
         references = []
         _references = d.pop("references")
@@ -133,7 +133,7 @@ class QualityFeatureName:
             references.append(references_item)
 
         sample_batch = []
-        _sample_batch = d.pop("sampleBatch")
+        _sample_batch = d.pop("sample_batch")
         for sample_batch_item_data in _sample_batch:
             sample_batch_item = SampleBatch.from_dict(sample_batch_item_data)
 

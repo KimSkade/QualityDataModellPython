@@ -50,11 +50,11 @@ class Result:
             {
                 "id_short": id_short,
                 "value": value,
-                "measurementDate": measurement_date,
+                "measurement_date": measurement_date,
                 "uppertol": uppertol,
                 "lowertol": lowertol,
                 "nominal": nominal,
-                "resultCheck": result_check,
+                "result_check": result_check,
             }
         )
         if description is not UNSET:
@@ -71,7 +71,7 @@ class Result:
 
         value = d.pop("value")
 
-        measurement_date = d.pop("measurementDate")
+        measurement_date = d.pop("measurement_date")
 
         uppertol = d.pop("uppertol")
 
@@ -79,7 +79,7 @@ class Result:
 
         nominal = d.pop("nominal")
 
-        result_check = d.pop("resultCheck")
+        result_check = d.pop("result_check")
 
         description = d.pop("description", UNSET)
 
