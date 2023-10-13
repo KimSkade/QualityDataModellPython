@@ -237,7 +237,7 @@ def createAASQualityDatafromOneRowKMG(dateipfad):
     #  QualityDataAAS
     qualityDataAAS = qualityDataListen.QualityDataAAS(
         description="xyz",
-        id_short="QualityDataAAS",
+        id_short="QualityDataAAStest",
         id_="QualityDataAAS",
         qualityData=qualityDataSubmodel
     )
