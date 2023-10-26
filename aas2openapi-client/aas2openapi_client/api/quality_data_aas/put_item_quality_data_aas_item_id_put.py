@@ -78,26 +78,7 @@ def sync_detailed(
 
     Args:
         item_id (str):
-        json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "quality_data": {"id_": "Submodel", "description": "xyz",
-            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
-            "production_procedures": [{"id_short": "ProductionProcedures", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
-            "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
-            "http://www.google.de/1", "quality_feature_name": [{"id_short": "qualityFeatureName1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "feature_type": "Zylinder
-            Mitte", "function": "Durchmesser", "unit": "mm", "target_value": 9.0, "upper_tolerance":
-            0.1, "lower_tolerance": -0.1, "warning_limit": 100.0, "control_limit": 1.0,
-            "inspection_equipement": "PlatzhalterEquipment", "references": [{"id_short": "reference1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "point": "Platzhalter
-            point", "line": "Platzhalter line", "surface": "Platzhalter surface", "axis": "Platzhalter
-            axis"}], "sample_batch": [{"id_short": "sampleBatch1", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "sample_size": 1, "sample_data": [{"id_short":
-            "sampleData1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "sample_number": 1223, "sample_date": "Platzhalter Datum", "part_counter": 1212, "result":
-            [{"id_short": "result1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "value": 8.9973025, "measurement_date": "Platzhalte Datum Uhrzeit", "uppertol": 0.1,
-            "lowertol": -0.1, "nominal": 9.0, "result_check": true}]}]}]}]}]}]}}.
+        json_body (QualityDataAAS):
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -131,26 +112,7 @@ def sync(
 
     Args:
         item_id (str):
-        json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "quality_data": {"id_": "Submodel", "description": "xyz",
-            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
-            "production_procedures": [{"id_short": "ProductionProcedures", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
-            "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
-            "http://www.google.de/1", "quality_feature_name": [{"id_short": "qualityFeatureName1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "feature_type": "Zylinder
-            Mitte", "function": "Durchmesser", "unit": "mm", "target_value": 9.0, "upper_tolerance":
-            0.1, "lower_tolerance": -0.1, "warning_limit": 100.0, "control_limit": 1.0,
-            "inspection_equipement": "PlatzhalterEquipment", "references": [{"id_short": "reference1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "point": "Platzhalter
-            point", "line": "Platzhalter line", "surface": "Platzhalter surface", "axis": "Platzhalter
-            axis"}], "sample_batch": [{"id_short": "sampleBatch1", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "sample_size": 1, "sample_data": [{"id_short":
-            "sampleData1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "sample_number": 1223, "sample_date": "Platzhalter Datum", "part_counter": 1212, "result":
-            [{"id_short": "result1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "value": 8.9973025, "measurement_date": "Platzhalte Datum Uhrzeit", "uppertol": 0.1,
-            "lowertol": -0.1, "nominal": 9.0, "result_check": true}]}]}]}]}]}]}}.
+        json_body (QualityDataAAS):
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -177,26 +139,7 @@ async def asyncio_detailed(
 
     Args:
         item_id (str):
-        json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "quality_data": {"id_": "Submodel", "description": "xyz",
-            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
-            "production_procedures": [{"id_short": "ProductionProcedures", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
-            "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
-            "http://www.google.de/1", "quality_feature_name": [{"id_short": "qualityFeatureName1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "feature_type": "Zylinder
-            Mitte", "function": "Durchmesser", "unit": "mm", "target_value": 9.0, "upper_tolerance":
-            0.1, "lower_tolerance": -0.1, "warning_limit": 100.0, "control_limit": 1.0,
-            "inspection_equipement": "PlatzhalterEquipment", "references": [{"id_short": "reference1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "point": "Platzhalter
-            point", "line": "Platzhalter line", "surface": "Platzhalter surface", "axis": "Platzhalter
-            axis"}], "sample_batch": [{"id_short": "sampleBatch1", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "sample_size": 1, "sample_data": [{"id_short":
-            "sampleData1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "sample_number": 1223, "sample_date": "Platzhalter Datum", "part_counter": 1212, "result":
-            [{"id_short": "result1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "value": 8.9973025, "measurement_date": "Platzhalte Datum Uhrzeit", "uppertol": 0.1,
-            "lowertol": -0.1, "nominal": 9.0, "result_check": true}]}]}]}]}]}]}}.
+        json_body (QualityDataAAS):
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -228,26 +171,7 @@ async def asyncio(
 
     Args:
         item_id (str):
-        json_body (QualityDataAAS):  Example: {"id_": "QualityDataAAS", "description": "xyz",
-            "id_short": "QualityDataAAS", "quality_data": {"id_": "Submodel", "description": "xyz",
-            "id_short": "QualityDataSubmodel", "semantic_id": "http://www.google.de/1",
-            "production_procedures": [{"id_short": "ProductionProcedures", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "resource": "Platzhalter", "process":
-            "Patzhalter", "features": [{"id_short": "Features", "description": "xyz", "semantic_id":
-            "http://www.google.de/1", "quality_feature_name": [{"id_short": "qualityFeatureName1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "feature_type": "Zylinder
-            Mitte", "function": "Durchmesser", "unit": "mm", "target_value": 9.0, "upper_tolerance":
-            0.1, "lower_tolerance": -0.1, "warning_limit": 100.0, "control_limit": 1.0,
-            "inspection_equipement": "PlatzhalterEquipment", "references": [{"id_short": "reference1",
-            "description": "xyz", "semantic_id": "http://www.google.de/1", "point": "Platzhalter
-            point", "line": "Platzhalter line", "surface": "Platzhalter surface", "axis": "Platzhalter
-            axis"}], "sample_batch": [{"id_short": "sampleBatch1", "description": "xyz",
-            "semantic_id": "http://www.google.de/1", "sample_size": 1, "sample_data": [{"id_short":
-            "sampleData1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "sample_number": 1223, "sample_date": "Platzhalter Datum", "part_counter": 1212, "result":
-            [{"id_short": "result1", "description": "xyz", "semantic_id": "http://www.google.de/1",
-            "value": 8.9973025, "measurement_date": "Platzhalte Datum Uhrzeit", "uppertol": 0.1,
-            "lowertol": -0.1, "nominal": 9.0, "result_check": true}]}]}]}]}]}]}}.
+        json_body (QualityDataAAS):
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.

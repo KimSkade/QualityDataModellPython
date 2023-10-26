@@ -4,10 +4,10 @@ from typing import Optional, List
 
 class TargetValue (SubmodelElementCollection):
     value: float
-    valueDescription: str
+    value_description: str
 
 
 class Product (Submodel):
-    targetValue: List[TargetValue]
+    target_value: List[TargetValue]
 
 

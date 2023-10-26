@@ -2,11 +2,11 @@ from aas2openapi.models.base import AAS, Submodel, SubmodelElementCollection
 from typing import Optional, List
 
 
-class PlantParameter (SubmodelElementCollection):
-    valueMin: float
-    valueMax: float
-    valueDescription: str
+class MachineParameter (SubmodelElementCollection):
+    value_min: float
+    value_max: float
+    value_description: str
 
 
 class Resource (Submodel):
-    plantParameter: List[PlantParameter]
+    machine_parameter: List[MachineParameter]

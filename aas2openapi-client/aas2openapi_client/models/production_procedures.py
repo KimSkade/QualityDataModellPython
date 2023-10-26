@@ -16,30 +16,20 @@ class ProductionProcedures:
     """
     Attributes:
         id_short (str):
-        resource (str):
-        process (str):
-        features (List['Features']):
+        features (Features):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
     id_short: str
-    resource: str
-    process: str
-    features: List["Features"]
+    features: "Features"
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
-        resource = self.resource
-        process = self.process
-        features = []
-        for features_item_data in self.features:
-            features_item = features_item_data.to_dict()
-
-            features.append(features_item)
+        features = self.features.to_dict()
 
         description = self.description
         semantic_id = self.semantic_id
@@ -49,8 +39,6 @@ class ProductionProcedures:
         field_dict.update(
             {
                 "id_short": id_short,
-                "resource": resource,
-                "process": process,
                 "features": features,
             }
         )
@@ -68,16 +56,7 @@ class ProductionProcedures:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
-        resource = d.pop("resource")
-
-        process = d.pop("process")
-
-        features = []
-        _features = d.pop("features")
-        for features_item_data in _features:
-            features_item = Features.from_dict(features_item_data)
-
-            features.append(features_item)
+        features = Features.from_dict(d.pop("features"))
 
         description = d.pop("description", UNSET)
 
@@ -85,8 +64,6 @@ class ProductionProcedures:
 
         production_procedures = cls(
             id_short=id_short,
-            resource=resource,
-            process=process,
             features=features,
             description=description,
             semantic_id=semantic_id,

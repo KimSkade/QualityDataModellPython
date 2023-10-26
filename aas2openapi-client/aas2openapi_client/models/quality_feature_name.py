@@ -5,8 +5,7 @@ import attr
 from ..types import UNSET, Unset
 
 if TYPE_CHECKING:
-    from ..models.references import References
-    from ..models.sample_batch import SampleBatch
+    from ..models.result import Result
 
 
 T = TypeVar("T", bound="QualityFeatureName")
@@ -19,60 +18,42 @@ class QualityFeatureName:
         id_short (str):
         feature_type (str):
         function (str):
+        inspection_equipment (str):
         unit (str):
-        target_value (float):
-        upper_tolerance (float):
-        lower_tolerance (float):
         warning_limit (float):
         control_limit (float):
-        inspection_equipement (str):
-        references (List['References']):
-        sample_batch (List['SampleBatch']):
+        result (Result):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
+        sample_size (Union[Unset, int]):
     """
 
     id_short: str
     feature_type: str
     function: str
+    inspection_equipment: str
     unit: str
-    target_value: float
-    upper_tolerance: float
-    lower_tolerance: float
     warning_limit: float
     control_limit: float
-    inspection_equipement: str
-    references: List["References"]
-    sample_batch: List["SampleBatch"]
+    result: "Result"
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
+    sample_size: Union[Unset, int] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
         feature_type = self.feature_type
         function = self.function
+        inspection_equipment = self.inspection_equipment
         unit = self.unit
-        target_value = self.target_value
-        upper_tolerance = self.upper_tolerance
-        lower_tolerance = self.lower_tolerance
         warning_limit = self.warning_limit
         control_limit = self.control_limit
-        inspection_equipement = self.inspection_equipement
-        references = []
-        for references_item_data in self.references:
-            references_item = references_item_data.to_dict()
-
-            references.append(references_item)
-
-        sample_batch = []
-        for sample_batch_item_data in self.sample_batch:
-            sample_batch_item = sample_batch_item_data.to_dict()
-
-            sample_batch.append(sample_batch_item)
+        result = self.result.to_dict()
 
         description = self.description
         semantic_id = self.semantic_id
+        sample_size = self.sample_size
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
@@ -81,28 +62,25 @@ class QualityFeatureName:
                 "id_short": id_short,
                 "feature_type": feature_type,
                 "function": function,
+                "inspection_equipment": inspection_equipment,
                 "unit": unit,
-                "target_value": target_value,
-                "upper_tolerance": upper_tolerance,
-                "lower_tolerance": lower_tolerance,
                 "warning_limit": warning_limit,
                 "control_limit": control_limit,
-                "inspection_equipement": inspection_equipement,
-                "references": references,
-                "sample_batch": sample_batch,
+                "result": result,
             }
         )
         if description is not UNSET:
             field_dict["description"] = description
         if semantic_id is not UNSET:
             field_dict["semantic_id"] = semantic_id
+        if sample_size is not UNSET:
+            field_dict["sample_size"] = sample_size
 
         return field_dict
 
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
-        from ..models.references import References
-        from ..models.sample_batch import SampleBatch
+        from ..models.result import Result
 
         d = src_dict.copy()
         id_short = d.pop("id_short")
@@ -111,53 +89,34 @@ class QualityFeatureName:
 
         function = d.pop("function")
 
+        inspection_equipment = d.pop("inspection_equipment")
+
         unit = d.pop("unit")
-
-        target_value = d.pop("target_value")
-
-        upper_tolerance = d.pop("upper_tolerance")
-
-        lower_tolerance = d.pop("lower_tolerance")
 
         warning_limit = d.pop("warning_limit")
 
         control_limit = d.pop("control_limit")
 
-        inspection_equipement = d.pop("inspection_equipement")
-
-        references = []
-        _references = d.pop("references")
-        for references_item_data in _references:
-            references_item = References.from_dict(references_item_data)
-
-            references.append(references_item)
-
-        sample_batch = []
-        _sample_batch = d.pop("sample_batch")
-        for sample_batch_item_data in _sample_batch:
-            sample_batch_item = SampleBatch.from_dict(sample_batch_item_data)
-
-            sample_batch.append(sample_batch_item)
+        result = Result.from_dict(d.pop("result"))
 
         description = d.pop("description", UNSET)
 
         semantic_id = d.pop("semantic_id", UNSET)
 
+        sample_size = d.pop("sample_size", UNSET)
+
         quality_feature_name = cls(
             id_short=id_short,
             feature_type=feature_type,
             function=function,
+            inspection_equipment=inspection_equipment,
             unit=unit,
-            target_value=target_value,
-            upper_tolerance=upper_tolerance,
-            lower_tolerance=lower_tolerance,
             warning_limit=warning_limit,
             control_limit=control_limit,
-            inspection_equipement=inspection_equipement,
-            references=references,
-            sample_batch=sample_batch,
+            result=result,
             description=description,
             semantic_id=semantic_id,
+            sample_size=sample_size,
         )
 
         quality_feature_name.additional_properties = d

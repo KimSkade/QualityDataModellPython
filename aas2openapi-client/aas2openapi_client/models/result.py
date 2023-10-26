@@ -1,8 +1,12 @@
-from typing import Any, Dict, List, Type, TypeVar, Union
+from typing import TYPE_CHECKING, Any, Dict, List, Type, TypeVar, Union
 
 import attr
 
 from ..types import UNSET, Unset
+
+if TYPE_CHECKING:
+    from ..models.new_results import NewResults
+
 
 T = TypeVar("T", bound="Result")
 
@@ -12,35 +16,25 @@ class Result:
     """
     Attributes:
         id_short (str):
-        value (float):
-        measurement_date (str):
-        uppertol (float):
-        lowertol (float):
-        nominal (float):
-        result_check (bool):
+        new_results (List['NewResults']):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
     id_short: str
-    value: float
-    measurement_date: str
-    uppertol: float
-    lowertol: float
-    nominal: float
-    result_check: bool
+    new_results: List["NewResults"]
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
-        value = self.value
-        measurement_date = self.measurement_date
-        uppertol = self.uppertol
-        lowertol = self.lowertol
-        nominal = self.nominal
-        result_check = self.result_check
+        new_results = []
+        for new_results_item_data in self.new_results:
+            new_results_item = new_results_item_data.to_dict()
+
+            new_results.append(new_results_item)
+
         description = self.description
         semantic_id = self.semantic_id
 
@@ -49,12 +43,7 @@ class Result:
         field_dict.update(
             {
                 "id_short": id_short,
-                "value": value,
-                "measurement_date": measurement_date,
-                "uppertol": uppertol,
-                "lowertol": lowertol,
-                "nominal": nominal,
-                "result_check": result_check,
+                "new_results": new_results,
             }
         )
         if description is not UNSET:
@@ -66,20 +55,17 @@ class Result:
 
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+        from ..models.new_results import NewResults
+
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
-        value = d.pop("value")
+        new_results = []
+        _new_results = d.pop("new_results")
+        for new_results_item_data in _new_results:
+            new_results_item = NewResults.from_dict(new_results_item_data)
 
-        measurement_date = d.pop("measurement_date")
-
-        uppertol = d.pop("uppertol")
-
-        lowertol = d.pop("lowertol")
-
-        nominal = d.pop("nominal")
-
-        result_check = d.pop("result_check")
+            new_results.append(new_results_item)
 
         description = d.pop("description", UNSET)
 
@@ -87,12 +73,7 @@ class Result:
 
         result = cls(
             id_short=id_short,
-            value=value,
-            measurement_date=measurement_date,
-            uppertol=uppertol,
-            lowertol=lowertol,
-            nominal=nominal,
-            result_check=result_check,
+            new_results=new_results,
             description=description,
             semantic_id=semantic_id,
         )

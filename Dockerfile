@@ -19,4 +19,4 @@ COPY . /app
 
 EXPOSE 8000
 
-CMD ["python", "testStartAPI.py"]
+CMD ["python", "start_api.py"]

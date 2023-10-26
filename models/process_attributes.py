@@ -24,4 +24,4 @@ class AttributePredicate (SubmodelElementCollection):
     attribute_value: AttributeValue
 
 class AttributePredicates (Submodel):
-    attributePredicate: List[AttributePredicate]
+    attribute_predicate: List[AttributePredicate]

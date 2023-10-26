@@ -1,44 +1,43 @@
 from aas2openapi.models.base import AAS, Submodel, SubmodelElementCollection
 from typing import Optional, List
 from datetime import datetime
-from models import processAttributes, product, resource, qualityDataListen
+from models import process_attributes, product, resource
 
 
-# NewPlantParameters Submodel
-class NewValuesPlantParameter(SubmodelElementCollection):
-    timestamp: int       # passt datetime?
+# NewMachineParameters Submodel
+class NewValuesMachineParameter(SubmodelElementCollection):
+    timestamp: str
     value: List[float]
 
 
-class NewPlantParameterData(SubmodelElementCollection):
-    newValuesPlantParameter: List[NewValuesPlantParameter]
-
-
-class NewPlantParameter(Submodel):
-    newPlantParameter: NewPlantParameterData
+class NewMachineParameter(SubmodelElementCollection):
+    new_values_machine_parameter: List[NewValuesMachineParameter]
 
 
 # ProcessDatas Submodel
 class NewValuesProcessData(SubmodelElementCollection):
-    timestamp: int       # passt datetime?
+    timestamp: str
     value: List[float]
 
 
 class ProcessData(SubmodelElementCollection):
-    processDataType: str
-    newValues: List[NewValuesProcessData]
+    process_data_type: str
+    new_values: List[NewValuesProcessData]
 
 
-class ProcessDatas(Submodel):
-    processData: List[ProcessData]
+class ProcessDatas(SubmodelElementCollection):
+    process_data: List[ProcessData]
+
+
+class ProcedureData(SubmodelElementCollection):
+    new_machine_parameter: NewMachineParameter
+    process_data: ProcessDatas
 
 
 # Procedure AAS
 class Procedure(AAS):
     product: product.Product
     resource: resource.Resource
-    processAttributes: processAttributes.AttributePredicates
-    newPlantParameters: NewPlantParameter
-    processDatas: ProcessDatas
-    # qualityData: qualityDataListen.QualityData
+    process_attributes: process_attributes.AttributePredicates
+    procedure_data: ProcedureData
 

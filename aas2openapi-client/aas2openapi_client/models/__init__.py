@@ -2,6 +2,7 @@
 
 from .features import Features
 from .http_validation_error import HTTPValidationError
+from .new_results import NewResults
 from .post_item_quality_data_aas_post_response_post_item_qualitydataaas_post import (
     PostItemQualityDataAASPostResponsePostItemQualitydataaasPost,
 )
@@ -15,15 +16,13 @@ from .put_item_quality_data_aas_item_id_quality_data_put_response_put_item_quali
 from .quality_data import QualityData
 from .quality_data_aas import QualityDataAAS
 from .quality_feature_name import QualityFeatureName
-from .references import References
 from .result import Result
-from .sample_batch import SampleBatch
-from .sample_data import SampleData
 from .validation_error import ValidationError
 
 __all__ = (
     "Features",
     "HTTPValidationError",
+    "NewResults",
     "PostItemQualityDataAASPostResponsePostItemQualitydataaasPost",
     "ProductionProcedures",
     "PutItemQualityDataAASItemIdPutResponsePutItemQualitydataaasItemIdPut",
@@ -31,9 +30,6 @@ __all__ = (
     "QualityData",
     "QualityDataAAS",
     "QualityFeatureName",
-    "References",
     "Result",
-    "SampleBatch",
-    "SampleData",
     "ValidationError",
 )

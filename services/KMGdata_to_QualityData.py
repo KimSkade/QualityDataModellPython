@@ -1,4 +1,4 @@
-from models import qualityDataListen
+from models import quality
 from txtEinlesen import getValuefromColumName
 
 
