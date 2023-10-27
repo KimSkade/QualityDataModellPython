@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 import aas2openapi
 from aas2openapi.client.submodel_client import get_all_basyx_submodels_from_server, post_submodel_to_server, put_submodel_to_server, submodel_is_on_server
-from aas2openapi.convert.convert_pydantic import ClientModel, get_vars
+from aas2openapi.convert.convert_pydantic import ClientModel
 from aas2openapi.models import base
 from aas2openapi.util import client_utils, convert_util
 
@@ -16,6 +16,8 @@ from aas2openapi.util import client_utils, convert_util
 from ba_syx_aas_repository_client import Client as AASClient
 from ba_syx_aas_repository_client.api.asset_administration_shell_repository_api import delete_asset_administration_shell_by_id, get_all_asset_administration_shells, get_asset_administration_shell_by_id, post_asset_administration_shell, put_asset_administration_shell_by_id
 from fastapi import HTTPException
+
+from aas2openapi.util.convert_util import get_vars
 
 
 AAS_SERVER_ADRESS, SUBMODEL_SERVER_ADRESS = client_utils.load_aas_and_submodel_repository_adress()
@@ -96,9 +98,15 @@ async def put_aas_to_server(aas: base.AAS):
         aas_identifier=base_64_id, client=client, json_body=aas_for_client
     )
 
-    submodels = convert_util.get_all_submodels_from_object_store(obj_store)
-    for submodel in submodels:
-        put_submodel_to_server(submodel)
+    aas_attributes = get_vars(aas)
+    for submodel in aas_attributes.values():
+        if await submodel_is_on_server(submodel.id_):
+            await put_submodel_to_server(submodel)
+        else:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Submodel with id {submodel.id_} does not exist. Use POST method to create the submodel.",
+            )
 
 
 async def get_basyx_aas_from_server(aas_id: str) -> model.AssetAdministrationShell:

@@ -6,9 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 from basyx.aas import model
 
+import aas2openapi
 from aas2openapi.middleware.graphql_routers import generate_graphql_endpoint
 from aas2openapi.middleware.rest_routers import generate_endpoints_from_model
-import aas2openapi
+from aas2openapi.middleware.register_model_api import generate_model_api
 from aas2openapi.util.convert_util import set_example_values, get_pydantic_model_from_dict, get_pydantic_models_from_instances
 
 
@@ -57,7 +58,7 @@ class Middleware:
 
         return self._app
 
-    def load_json_models(self, json_models: dict=None, file_path: str=None):
+    def load_json_models(self, json_models: dict=None, file_path: str=None, all_fields_required: bool=False):
         """
         Functions that loads aas' and submodels from a json file into the middleware that can be used for synchronization.
 
@@ -73,7 +74,7 @@ class Middleware:
             with open(file_path) as json_file:
                 json_models = json.load(json_file)
         for model_name, model_values in json_models.items():
-            pydantic_model = get_pydantic_model_from_dict(model_values, model_name)
+            pydantic_model = get_pydantic_model_from_dict(model_values, model_name, all_fields_required)
             self.models.append(pydantic_model)
 
     def load_pydantic_model_instances(self, instances: typing.List[BaseModel]):
@@ -105,6 +106,15 @@ class Middleware:
         instances = aas2openapi.convert_object_store_to_pydantic_models(models)
         self.models = get_pydantic_models_from_instances(instances)
 
+
+    def generate_model_registry_api(self):
+        """
+        Adds a REST API so that new models can be registered and unregistered from the Middleware. 
+        """
+        router = generate_model_api(middleware_instance=self)
+        self.app.include_router(router)
+        # TODO: make sure, that the API is always at the top or maybe make it as standard component of the middleware...
+
     def generate_rest_api(self):
         """
         Generates a REST API with CRUD operations for aas' and submodels from the loaded models.
@@ -118,5 +128,7 @@ class Middleware:
         """
         Generates a GraphQL API with query operations for aas' and submodels from the loaded models.
         """
-        router = generate_graphql_endpoint(self.models)
-        self.app.include_router(router)
+        graphql_app = generate_graphql_endpoint(self.models)
+        self.app.mount("/graphql", graphql_app)
+
+

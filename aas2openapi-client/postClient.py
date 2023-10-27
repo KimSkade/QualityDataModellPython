@@ -21,9 +21,6 @@ production_procedures1 = ProductionProcedures(
     features=features,
 )
 
-
-
-
 quality_data_submodel = QualityData(
     id="string",
     id_short="QualityDataSubmodel",
@@ -36,12 +33,11 @@ quality_data_submodel = QualityData(
 client = client.Client(base_url="http://127.0.0.1:8000")
 
 
-
 from aas2openapi_client.api.quality_data_aas.put_item_quality_data_aas_item_id_quality_data_put import sync
 sync(client=client, item_id='12string', json_body=quality_data_submodel)
 
-#my_data: models.QualityDataAAS = sync(client=client)
-#response: Response[models.QualityDataAAS] = sync_detailed(client=client)
+# my_data: models.QualityDataAAS = sync(client=client)
+# response: Response[models.QualityDataAAS] = sync_detailed(client=client)
 
 test = quality_data_submodel.to_dict()
 print(test)
