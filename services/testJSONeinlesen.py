@@ -14,17 +14,17 @@ def load_features_from_json(json_file):
     return features_list
 
 
-json_file = "10785.json"
-loaded_features = load_features_from_json(json_file)
+# json_file = "10785.json"
+# loaded_features = load_features_from_json(json_file)
 # print(loaded_features)
 
 
-maximale_Amplitude = loaded_features[0].get("Maximale_Amplitude_Rohsignal_0.0bis18.9s")
-print(maximale_Amplitude)
+# maximale_Amplitude = loaded_features[0].get("Maximale_Amplitude_Rohsignal_0.0bis18.9s")
+# print(maximale_Amplitude)
 
 
-if loaded_features:
-    features_data = loaded_features[0]
-    for feature_name, feature_value in features_data.items():
-        print(f"{feature_name}: {feature_value}")
+# if loaded_features:
+    # features_data = loaded_features[0]
+    # for feature_name, feature_value in features_data.items():
+        # print(f"{feature_name}: {feature_value}")
         

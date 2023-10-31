@@ -31,7 +31,7 @@ class Features(SubmodelElementCollection):
 
 
 class ProductionProcedures(SubmodelElementCollection):
-    # list_procedures: List[ProcedureData]
+    list_procedures: Optional[List[ProcedureData]]
     features: Features
 
 

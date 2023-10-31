@@ -30,7 +30,7 @@ class ProcessDatas(SubmodelElementCollection):
 
 
 class ProcedureData(SubmodelElementCollection):
-    new_machine_parameter: NewMachineParameter
+    new_machine_parameter: Optional[NewMachineParameter]
     process_data: ProcessDatas
 
 

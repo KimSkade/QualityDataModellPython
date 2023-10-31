@@ -6,6 +6,7 @@ from ..types import UNSET, Unset
 
 if TYPE_CHECKING:
     from ..models.features import Features
+    from ..models.procedure_data import ProcedureData
 
 
 T = TypeVar("T", bound="ProductionProcedures")
@@ -19,12 +20,14 @@ class ProductionProcedures:
         features (Features):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
+        list_procedures (Union[Unset, List['ProcedureData']]):
     """
 
     id_short: str
     features: "Features"
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
+    list_procedures: Union[Unset, List["ProcedureData"]] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
@@ -33,6 +36,13 @@ class ProductionProcedures:
 
         description = self.description
         semantic_id = self.semantic_id
+        list_procedures: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.list_procedures, Unset):
+            list_procedures = []
+            for list_procedures_item_data in self.list_procedures:
+                list_procedures_item = list_procedures_item_data.to_dict()
+
+                list_procedures.append(list_procedures_item)
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
@@ -46,12 +56,15 @@ class ProductionProcedures:
             field_dict["description"] = description
         if semantic_id is not UNSET:
             field_dict["semantic_id"] = semantic_id
+        if list_procedures is not UNSET:
+            field_dict["list_procedures"] = list_procedures
 
         return field_dict
 
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
         from ..models.features import Features
+        from ..models.procedure_data import ProcedureData
 
         d = src_dict.copy()
         id_short = d.pop("id_short")
@@ -62,11 +75,19 @@ class ProductionProcedures:
 
         semantic_id = d.pop("semantic_id", UNSET)
 
+        list_procedures = []
+        _list_procedures = d.pop("list_procedures", UNSET)
+        for list_procedures_item_data in _list_procedures or []:
+            list_procedures_item = ProcedureData.from_dict(list_procedures_item_data)
+
+            list_procedures.append(list_procedures_item)
+
         production_procedures = cls(
             id_short=id_short,
             features=features,
             description=description,
             semantic_id=semantic_id,
+            list_procedures=list_procedures,
         )
 
         production_procedures.additional_properties = d
