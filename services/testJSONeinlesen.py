@@ -14,9 +14,18 @@ def load_features_from_json(json_file):
     return features_list
 
 
-# json_file = "10785.json"
+def timestamp_from_json(json_file):
+    with open(json_file, "r") as file:
+        data = json.load(file)
+    if "t" in data:
+        timestamp = data["t"]
+    return timestamp
+
+
+#json_file = "10785.json"
 # loaded_features = load_features_from_json(json_file)
 # print(loaded_features)
+# print(timestamp_from_json(json_file))
 
 
 # maximale_Amplitude = loaded_features[0].get("Maximale_Amplitude_Rohsignal_0.0bis18.9s")

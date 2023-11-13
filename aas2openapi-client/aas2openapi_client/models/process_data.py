@@ -16,14 +16,12 @@ class ProcessData:
     """
     Attributes:
         id_short (str):
-        process_data_type (str):
         new_values (List['NewValuesProcessData']):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
     id_short: str
-    process_data_type: str
     new_values: List["NewValuesProcessData"]
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
@@ -31,7 +29,6 @@ class ProcessData:
 
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
-        process_data_type = self.process_data_type
         new_values = []
         for new_values_item_data in self.new_values:
             new_values_item = new_values_item_data.to_dict()
@@ -46,7 +43,6 @@ class ProcessData:
         field_dict.update(
             {
                 "id_short": id_short,
-                "process_data_type": process_data_type,
                 "new_values": new_values,
             }
         )
@@ -64,8 +60,6 @@ class ProcessData:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
-        process_data_type = d.pop("process_data_type")
-
         new_values = []
         _new_values = d.pop("new_values")
         for new_values_item_data in _new_values:
@@ -79,7 +73,6 @@ class ProcessData:
 
         process_data = cls(
             id_short=id_short,
-            process_data_type=process_data_type,
             new_values=new_values,
             description=description,
             semantic_id=semantic_id,

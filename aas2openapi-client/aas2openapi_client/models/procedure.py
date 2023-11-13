@@ -5,49 +5,54 @@ import attr
 from ..types import UNSET, Unset
 
 if TYPE_CHECKING:
-    from ..models.quality_feature_name import QualityFeatureName
+    from ..models.process_data import ProcessData
 
 
-T = TypeVar("T", bound="Features")
+T = TypeVar("T", bound="Procedure")
 
 
 @attr.s(auto_attribs=True)
-class Features:
+class Procedure:
     """
     Attributes:
-        id_short (str):
-        quality_feature_name (List['QualityFeatureName']):
+        id (str):
+        process_data_type (str):
+        process_data (ProcessData):
         description (Union[Unset, str]):
+        id_short (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
-    id_short: str
-    quality_feature_name: List["QualityFeatureName"]
+    id: str
+    process_data_type: str
+    process_data: "ProcessData"
     description: Union[Unset, str] = UNSET
+    id_short: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
-        id_short = self.id_short
-        quality_feature_name = []
-        for quality_feature_name_item_data in self.quality_feature_name:
-            quality_feature_name_item = quality_feature_name_item_data.to_dict()
-
-            quality_feature_name.append(quality_feature_name_item)
+        id = self.id
+        process_data_type = self.process_data_type
+        process_data = self.process_data.to_dict()
 
         description = self.description
+        id_short = self.id_short
         semantic_id = self.semantic_id
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
         field_dict.update(
             {
-                "id_short": id_short,
-                "quality_feature_name": quality_feature_name,
+                "id_": id,
+                "process_data_type": process_data_type,
+                "process_data": process_data,
             }
         )
         if description is not UNSET:
             field_dict["description"] = description
+        if id_short is not UNSET:
+            field_dict["id_short"] = id_short
         if semantic_id is not UNSET:
             field_dict["semantic_id"] = semantic_id
 
@@ -55,31 +60,32 @@ class Features:
 
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
-        from ..models.quality_feature_name import QualityFeatureName
+        from ..models.process_data import ProcessData
 
         d = src_dict.copy()
-        id_short = d.pop("id_short")
+        id = d.pop("id_")
 
-        quality_feature_name = []
-        _quality_feature_name = d.pop("quality_feature_name")
-        for quality_feature_name_item_data in _quality_feature_name:
-            quality_feature_name_item = QualityFeatureName.from_dict(quality_feature_name_item_data)
+        process_data_type = d.pop("process_data_type")
 
-            quality_feature_name.append(quality_feature_name_item)
+        process_data = ProcessData.from_dict(d.pop("process_data"))
 
         description = d.pop("description", UNSET)
 
+        id_short = d.pop("id_short", UNSET)
+
         semantic_id = d.pop("semantic_id", UNSET)
 
-        features = cls(
-            id_short=id_short,
-            quality_feature_name=quality_feature_name,
+        procedure = cls(
+            id=id,
+            process_data_type=process_data_type,
+            process_data=process_data,
             description=description,
+            id_short=id_short,
             semantic_id=semantic_id,
         )
 
-        features.additional_properties = d
-        return features
+        procedure.additional_properties = d
+        return procedure
 
     @property
     def additional_keys(self) -> List[str]:

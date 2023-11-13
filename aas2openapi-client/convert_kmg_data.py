@@ -1,12 +1,13 @@
 from services.txtEinlesen import getValuefromColumName
 
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_quality_data_get import sync
+from aas2openapi_client.api.quality_data_aas import put_item_quality_data_aas_item_id_quality_data_put
 from aas2openapi_client.models import *
 
 
 def put_kmg_data(dateipfad, breakpoint):
     i = 1
-    quality_feature_names = []
+    quality_features = []
 
     while breakpoint != getValuefromColumName(dateipfad, "planid", i):
         #  new values results SubmodelElementCollections
@@ -29,7 +30,7 @@ def put_kmg_data(dateipfad, breakpoint):
             new_results=[new_result],
         )
 
-        quality_feature_name = QualityFeatureName(
+        quality_feature = QualityFeature(
             id_short="qualityFeatureName" + str(i),
             semantic_id="http://www.google.de/1",
             description="xyz",
@@ -41,26 +42,25 @@ def put_kmg_data(dateipfad, breakpoint):
             control_limit=1,
             sample_size=1,  # wo kommt die her
             result=result,
+            target_value=float(getValuefromColumName(dateipfad, "nominal", i)),
+            lower_tolerance=float(getValuefromColumName(dateipfad, "lowertol", i)),
+            upper_tolerance=float(getValuefromColumName(dateipfad, "uppertol", i)),
         )
-        quality_feature_names.append(quality_feature_name)
+        quality_features.append(quality_feature)
         i += 1
 
-    return quality_feature_names
+    return quality_features
 
 
-def post_new_results(dateipfad, item_id, client):
+def put_new_results(dateipfad, breakpoint, item_id, client):
     quality_data: QualityData = sync(item_id=item_id, client=client)
     # print(quality_data)
-    for quality_feature_name in quality_data.production_procedures[
-        0
-    ].features.quality_feature_name:  # production_procedures setzen
+    for quality_feature in quality_data.quality_feature:
         i = 1
         while breakpoint != getValuefromColumName(dateipfad, "planid", i):
-            if quality_feature_name.feature_type == getValuefromColumName(dateipfad, "featureid", i):
-                post_id = quality_feature_name.id_short
-                print(post_id)
+            if quality_feature.feature_type == getValuefromColumName(dateipfad, "featureid", i):
                 new_result = NewResults(
-                    id_short="result" + str(i),
+                    id_short="result" + str(i)+ str(i),
                     semantic_id="http://www.google.de/1",
                     description="This are new measurement datas.",
                     measurement_date="Platzhalter Datum Uhrzeit",  # Quelle MeasureDate
@@ -69,8 +69,12 @@ def post_new_results(dateipfad, item_id, client):
                     sample_number="1223",
                     part_counter=getValuefromColumName(dateipfad, "partnb", i),
                 )
-                # post new_result
+                quality_feature.result.new_results.append(new_result)
                 print(new_result)
+                print(quality_data.quality_feature)
                 break
             else:
                 i += 1
+
+    # put quality_data
+    put_item_quality_data_aas_item_id_quality_data_put.sync(item_id=item_id, client=client, json_body=quality_data)

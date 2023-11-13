@@ -5,25 +5,28 @@ import attr
 from ..types import UNSET, Unset
 
 if TYPE_CHECKING:
-    from ..models.quality_feature import QualityFeature
+    from ..models.machine_parameter import MachineParameter
+    from ..models.new_machine_parameter import NewMachineParameter
 
 
-T = TypeVar("T", bound="QualityData")
+T = TypeVar("T", bound="Resource")
 
 
 @attr.s(auto_attribs=True)
-class QualityData:
+class Resource:
     """
     Attributes:
         id (str):
-        quality_feature (List['QualityFeature']):
+        machine_parameter (List['MachineParameter']):
+        new_machine_parameter (NewMachineParameter):
         description (Union[Unset, str]):
         id_short (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
     id: str
-    quality_feature: List["QualityFeature"]
+    machine_parameter: List["MachineParameter"]
+    new_machine_parameter: "NewMachineParameter"
     description: Union[Unset, str] = UNSET
     id_short: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
@@ -31,11 +34,13 @@ class QualityData:
 
     def to_dict(self) -> Dict[str, Any]:
         id = self.id
-        quality_feature = []
-        for quality_feature_item_data in self.quality_feature:
-            quality_feature_item = quality_feature_item_data.to_dict()
+        machine_parameter = []
+        for machine_parameter_item_data in self.machine_parameter:
+            machine_parameter_item = machine_parameter_item_data.to_dict()
 
-            quality_feature.append(quality_feature_item)
+            machine_parameter.append(machine_parameter_item)
+
+        new_machine_parameter = self.new_machine_parameter.to_dict()
 
         description = self.description
         id_short = self.id_short
@@ -46,7 +51,8 @@ class QualityData:
         field_dict.update(
             {
                 "id_": id,
-                "quality_feature": quality_feature,
+                "machine_parameter": machine_parameter,
+                "new_machine_parameter": new_machine_parameter,
             }
         )
         if description is not UNSET:
@@ -60,17 +66,20 @@ class QualityData:
 
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
-        from ..models.quality_feature import QualityFeature
+        from ..models.machine_parameter import MachineParameter
+        from ..models.new_machine_parameter import NewMachineParameter
 
         d = src_dict.copy()
         id = d.pop("id_")
 
-        quality_feature = []
-        _quality_feature = d.pop("quality_feature")
-        for quality_feature_item_data in _quality_feature:
-            quality_feature_item = QualityFeature.from_dict(quality_feature_item_data)
+        machine_parameter = []
+        _machine_parameter = d.pop("machine_parameter")
+        for machine_parameter_item_data in _machine_parameter:
+            machine_parameter_item = MachineParameter.from_dict(machine_parameter_item_data)
 
-            quality_feature.append(quality_feature_item)
+            machine_parameter.append(machine_parameter_item)
+
+        new_machine_parameter = NewMachineParameter.from_dict(d.pop("new_machine_parameter"))
 
         description = d.pop("description", UNSET)
 
@@ -78,16 +87,17 @@ class QualityData:
 
         semantic_id = d.pop("semantic_id", UNSET)
 
-        quality_data = cls(
+        resource = cls(
             id=id,
-            quality_feature=quality_feature,
+            machine_parameter=machine_parameter,
+            new_machine_parameter=new_machine_parameter,
             description=description,
             id_short=id_short,
             semantic_id=semantic_id,
         )
 
-        quality_data.additional_properties = d
-        return quality_data
+        resource.additional_properties = d
+        return resource
 
     @property
     def additional_keys(self) -> List[str]:

@@ -8,11 +8,11 @@ if TYPE_CHECKING:
     from ..models.result import Result
 
 
-T = TypeVar("T", bound="QualityFeatureName")
+T = TypeVar("T", bound="QualityFeature")
 
 
 @attr.s(auto_attribs=True)
-class QualityFeatureName:
+class QualityFeature:
     """
     Attributes:
         id_short (str):
@@ -22,6 +22,9 @@ class QualityFeatureName:
         unit (str):
         warning_limit (float):
         control_limit (float):
+        target_value (float):
+        upper_tolerance (float):
+        lower_tolerance (float):
         result (Result):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
@@ -35,6 +38,9 @@ class QualityFeatureName:
     unit: str
     warning_limit: float
     control_limit: float
+    target_value: float
+    upper_tolerance: float
+    lower_tolerance: float
     result: "Result"
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
@@ -49,6 +55,9 @@ class QualityFeatureName:
         unit = self.unit
         warning_limit = self.warning_limit
         control_limit = self.control_limit
+        target_value = self.target_value
+        upper_tolerance = self.upper_tolerance
+        lower_tolerance = self.lower_tolerance
         result = self.result.to_dict()
 
         description = self.description
@@ -66,6 +75,9 @@ class QualityFeatureName:
                 "unit": unit,
                 "warning_limit": warning_limit,
                 "control_limit": control_limit,
+                "target_value": target_value,
+                "upper_tolerance": upper_tolerance,
+                "lower_tolerance": lower_tolerance,
                 "result": result,
             }
         )
@@ -97,6 +109,12 @@ class QualityFeatureName:
 
         control_limit = d.pop("control_limit")
 
+        target_value = d.pop("target_value")
+
+        upper_tolerance = d.pop("upper_tolerance")
+
+        lower_tolerance = d.pop("lower_tolerance")
+
         result = Result.from_dict(d.pop("result"))
 
         description = d.pop("description", UNSET)
@@ -105,7 +123,7 @@ class QualityFeatureName:
 
         sample_size = d.pop("sample_size", UNSET)
 
-        quality_feature_name = cls(
+        quality_feature = cls(
             id_short=id_short,
             feature_type=feature_type,
             function=function,
@@ -113,14 +131,17 @@ class QualityFeatureName:
             unit=unit,
             warning_limit=warning_limit,
             control_limit=control_limit,
+            target_value=target_value,
+            upper_tolerance=upper_tolerance,
+            lower_tolerance=lower_tolerance,
             result=result,
             description=description,
             semantic_id=semantic_id,
             sample_size=sample_size,
         )
 
-        quality_feature_name.additional_properties = d
-        return quality_feature_name
+        quality_feature.additional_properties = d
+        return quality_feature
 
     @property
     def additional_keys(self) -> List[str]:
