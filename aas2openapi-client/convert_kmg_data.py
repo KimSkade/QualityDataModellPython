@@ -3,7 +3,8 @@ from services.txtEinlesen import getValuefromColumName
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_quality_data_get import sync
 from aas2openapi_client.api.quality_data_aas import put_item_quality_data_aas_item_id_quality_data_put
 from aas2openapi_client.models import *
-
+import os
+from services.convert_timestamp_in_str import convert_timestamp_in_str
 
 def put_kmg_data(dateipfad, breakpoint):
     i = 1
@@ -15,7 +16,7 @@ def put_kmg_data(dateipfad, breakpoint):
             id_short="result" + str(i),
             semantic_id="http://www.google.de/1",  # Platzhalter
             description="This are new measurement datas.",
-            measurement_date="Platzhalte Datum Uhrzeit",  # Quelle MeasureDate
+            measurement_date=convert_timestamp_in_str(os.path.getctime(dateipfad)),
             value=float(getValuefromColumName(dateipfad, "actual", i)),
             result_check=True,  # Formel für ResultCheck anpassen
             sample_number="1223",  # wo kommt die her
@@ -63,7 +64,7 @@ def put_new_results(dateipfad, breakpoint, item_id, client):
                     id_short="result" + str(i)+ str(i),
                     semantic_id="http://www.google.de/1",
                     description="This are new measurement datas.",
-                    measurement_date="Platzhalter Datum Uhrzeit",  # Quelle MeasureDate
+                    measurement_date=convert_timestamp_in_str(os.path.getctime(dateipfad)),
                     value=float(getValuefromColumName(dateipfad, "actual", i)),
                     result_check=True,  # Formel für ResultCheck anpassen
                     sample_number="1223",

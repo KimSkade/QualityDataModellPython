@@ -1,5 +1,5 @@
 from services.convert_timestamp_in_str import convert_timestamp_in_str
-from services.testJSONeinlesen import load_features_from_json, timestamp_from_json
+from services.JSONeinlesen import load_features_from_json, timestamp_from_json
 
 from aas2openapi_client.models import *
 
@@ -15,7 +15,7 @@ def put_new_process_data(json_file):
         id_short="new_data" + str(1),
         semantic_id="http://www.google.de/1",
         description="This are new process datas.",
-        timestamp=convert_timestamp_in_str(timestamp_from_json(json_file)),
+        timestamp=convert_timestamp_in_str(timestamp_from_json(json_file)/1000),
         value=feature_value_list,
     )
     process_data = ProcessData(
