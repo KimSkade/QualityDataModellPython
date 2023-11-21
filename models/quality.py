@@ -22,8 +22,10 @@ class QualityFeature(SubmodelElementCollection):
     function: str
     inspection_equipment: str
     unit: str
-    warning_limit: float
-    control_limit: float
+    upper_warning_limit: float
+    lower_warning_limit: float
+    upper_control_limit: float
+    lower_control_limit: float
     target_value: float
     upper_tolerance: float
     lower_tolerance: float

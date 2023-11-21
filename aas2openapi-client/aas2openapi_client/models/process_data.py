@@ -1,4 +1,4 @@
-from typing import TYPE_CHECKING, Any, Dict, List, Type, TypeVar, Union
+from typing import TYPE_CHECKING, Any, Dict, List, Type, TypeVar, Union, cast
 
 import attr
 
@@ -16,12 +16,16 @@ class ProcessData:
     """
     Attributes:
         id_short (str):
+        process_data_resource (str):
+        features_list (List[str]):
         new_values (List['NewValuesProcessData']):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
     id_short: str
+    process_data_resource: str
+    features_list: List[str]
     new_values: List["NewValuesProcessData"]
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
@@ -29,6 +33,9 @@ class ProcessData:
 
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
+        process_data_resource = self.process_data_resource
+        features_list = self.features_list
+
         new_values = []
         for new_values_item_data in self.new_values:
             new_values_item = new_values_item_data.to_dict()
@@ -43,6 +50,8 @@ class ProcessData:
         field_dict.update(
             {
                 "id_short": id_short,
+                "process_data_resource": process_data_resource,
+                "features_list": features_list,
                 "new_values": new_values,
             }
         )
@@ -60,6 +69,10 @@ class ProcessData:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
+        process_data_resource = d.pop("process_data_resource")
+
+        features_list = cast(List[str], d.pop("features_list"))
+
         new_values = []
         _new_values = d.pop("new_values")
         for new_values_item_data in _new_values:
@@ -73,6 +86,8 @@ class ProcessData:
 
         process_data = cls(
             id_short=id_short,
+            process_data_resource=process_data_resource,
+            features_list=features_list,
             new_values=new_values,
             description=description,
             semantic_id=semantic_id,

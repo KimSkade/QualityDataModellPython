@@ -4,15 +4,16 @@ from typing import Optional, List
 
 class NewValuesProcessData(SubmodelElementCollection):
     timestamp: str
-    value: List[float]
+    values: List[float]
 
 
 class ProcessData(SubmodelElementCollection):
+    process_data_resource: str
+    features_list: List[str]
     new_values: List[NewValuesProcessData]
 
 
 class Procedure(Submodel):
-    process_data_type: str
     process_data: ProcessData
 
 

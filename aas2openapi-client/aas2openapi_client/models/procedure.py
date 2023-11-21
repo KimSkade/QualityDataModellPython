@@ -16,7 +16,6 @@ class Procedure:
     """
     Attributes:
         id (str):
-        process_data_type (str):
         process_data (ProcessData):
         description (Union[Unset, str]):
         id_short (Union[Unset, str]):
@@ -24,7 +23,6 @@ class Procedure:
     """
 
     id: str
-    process_data_type: str
     process_data: "ProcessData"
     description: Union[Unset, str] = UNSET
     id_short: Union[Unset, str] = UNSET
@@ -33,7 +31,6 @@ class Procedure:
 
     def to_dict(self) -> Dict[str, Any]:
         id = self.id
-        process_data_type = self.process_data_type
         process_data = self.process_data.to_dict()
 
         description = self.description
@@ -45,7 +42,6 @@ class Procedure:
         field_dict.update(
             {
                 "id_": id,
-                "process_data_type": process_data_type,
                 "process_data": process_data,
             }
         )
@@ -65,8 +61,6 @@ class Procedure:
         d = src_dict.copy()
         id = d.pop("id_")
 
-        process_data_type = d.pop("process_data_type")
-
         process_data = ProcessData.from_dict(d.pop("process_data"))
 
         description = d.pop("description", UNSET)
@@ -77,7 +71,6 @@ class Procedure:
 
         procedure = cls(
             id=id,
-            process_data_type=process_data_type,
             process_data=process_data,
             description=description,
             id_short=id_short,

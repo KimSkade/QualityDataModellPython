@@ -13,14 +13,14 @@ class NewValuesProcessData:
     Attributes:
         id_short (str):
         timestamp (str):
-        value (List[float]):
+        values (List[float]):
         description (Union[Unset, str]):
         semantic_id (Union[Unset, str]):
     """
 
     id_short: str
     timestamp: str
-    value: List[float]
+    values: List[float]
     description: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
@@ -28,7 +28,7 @@ class NewValuesProcessData:
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
         timestamp = self.timestamp
-        value = self.value
+        values = self.values
 
         description = self.description
         semantic_id = self.semantic_id
@@ -39,7 +39,7 @@ class NewValuesProcessData:
             {
                 "id_short": id_short,
                 "timestamp": timestamp,
-                "value": value,
+                "values": values,
             }
         )
         if description is not UNSET:
@@ -56,7 +56,7 @@ class NewValuesProcessData:
 
         timestamp = d.pop("timestamp")
 
-        value = cast(List[float], d.pop("value"))
+        values = cast(List[float], d.pop("values"))
 
         description = d.pop("description", UNSET)
 
@@ -65,7 +65,7 @@ class NewValuesProcessData:
         new_values_process_data = cls(
             id_short=id_short,
             timestamp=timestamp,
-            value=value,
+            values=values,
             description=description,
             semantic_id=semantic_id,
         )

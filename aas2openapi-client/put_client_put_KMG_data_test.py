@@ -1,6 +1,5 @@
 from aas2openapi_client import client
 from aas2openapi_client.api.quality_data_aas.post_item_quality_data_aas_post import sync
-from aas2openapi_client.models import *
 from aas2openapi_client.models.quality_data import QualityData
 from convert_kmg_data import put_kmg_data
 

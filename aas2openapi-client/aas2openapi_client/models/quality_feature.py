@@ -20,8 +20,10 @@ class QualityFeature:
         function (str):
         inspection_equipment (str):
         unit (str):
-        warning_limit (float):
-        control_limit (float):
+        upper_warning_limit (float):
+        lower_warning_limit (float):
+        upper_control_limit (float):
+        lower_control_limit (float):
         target_value (float):
         upper_tolerance (float):
         lower_tolerance (float):
@@ -36,8 +38,10 @@ class QualityFeature:
     function: str
     inspection_equipment: str
     unit: str
-    warning_limit: float
-    control_limit: float
+    upper_warning_limit: float
+    lower_warning_limit: float
+    upper_control_limit: float
+    lower_control_limit: float
     target_value: float
     upper_tolerance: float
     lower_tolerance: float
@@ -53,8 +57,10 @@ class QualityFeature:
         function = self.function
         inspection_equipment = self.inspection_equipment
         unit = self.unit
-        warning_limit = self.warning_limit
-        control_limit = self.control_limit
+        upper_warning_limit = self.upper_warning_limit
+        lower_warning_limit = self.lower_warning_limit
+        upper_control_limit = self.upper_control_limit
+        lower_control_limit = self.lower_control_limit
         target_value = self.target_value
         upper_tolerance = self.upper_tolerance
         lower_tolerance = self.lower_tolerance
@@ -73,8 +79,10 @@ class QualityFeature:
                 "function": function,
                 "inspection_equipment": inspection_equipment,
                 "unit": unit,
-                "warning_limit": warning_limit,
-                "control_limit": control_limit,
+                "upper_warning_limit": upper_warning_limit,
+                "lower_warning_limit": lower_warning_limit,
+                "upper_control_limit": upper_control_limit,
+                "lower_control_limit": lower_control_limit,
                 "target_value": target_value,
                 "upper_tolerance": upper_tolerance,
                 "lower_tolerance": lower_tolerance,
@@ -105,9 +113,13 @@ class QualityFeature:
 
         unit = d.pop("unit")
 
-        warning_limit = d.pop("warning_limit")
+        upper_warning_limit = d.pop("upper_warning_limit")
 
-        control_limit = d.pop("control_limit")
+        lower_warning_limit = d.pop("lower_warning_limit")
+
+        upper_control_limit = d.pop("upper_control_limit")
+
+        lower_control_limit = d.pop("lower_control_limit")
 
         target_value = d.pop("target_value")
 
@@ -129,8 +141,10 @@ class QualityFeature:
             function=function,
             inspection_equipment=inspection_equipment,
             unit=unit,
-            warning_limit=warning_limit,
-            control_limit=control_limit,
+            upper_warning_limit=upper_warning_limit,
+            lower_warning_limit=lower_warning_limit,
+            upper_control_limit=upper_control_limit,
+            lower_control_limit=lower_control_limit,
             target_value=target_value,
             upper_tolerance=upper_tolerance,
             lower_tolerance=lower_tolerance,
