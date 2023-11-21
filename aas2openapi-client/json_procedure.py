@@ -1,5 +1,6 @@
 from services.convert_timestamp_in_str import convert_timestamp_in_str
 from services.JSONeinlesen import load_features_from_json, timestamp_from_json
+from services.id_generator import generate_unique_id
 
 from aas2openapi_client.models import *
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_procedure_get import sync as get_sync
@@ -16,14 +17,14 @@ def put_new_process_data(json_file):
         feature_type_list.append(feature_name)
     print(feature_value_list.__len__())
     new_value_process_data = NewValuesProcessData(
-        id_short="new_data" + str(1),
+        id_short=generate_unique_id(),
         semantic_id="http://www.google.de/1",
         description="This are new process datas.",
         timestamp=convert_timestamp_in_str(timestamp_from_json(json_file) / 1000),
         values=feature_value_list,
     )
     process_data = ProcessData(
-        id_short="process_data",
+        id_short=generate_unique_id(),
         semantic_id="http://www.google.de/1",
         description="Here new process data will be saved.",
         process_data_resource="",
@@ -44,7 +45,7 @@ def put_new_values_process_data(json_file, item_id, client):
     print(feature_value_list.__len__())
 
     new_value_process_data = NewValuesProcessData(
-        id_short="new_data" + str(1),
+        id_short=generate_unique_id(),
         semantic_id="http://www.google.de/1",
         description="This are new process datas.",
         timestamp=convert_timestamp_in_str(timestamp_from_json(json_file) / 1000),
@@ -62,7 +63,10 @@ client = client.Client(base_url="http://127.0.0.1:8000")
 
 
 process_data1 = put_new_process_data(json_file)
-print(process_data1)
+
+e = generate_unique_id()
+b = generate_unique_id()
+print(b)
 
 procedure_submodel = Procedure(
     id="bstring",
@@ -73,4 +77,4 @@ procedure_submodel = Procedure(
 )
 
 
-put_sync(client=client, item_id="12string", json_body=procedure_submodel)
+# put_sync(client=client, item_id="12string", json_body=procedure_submodel)
