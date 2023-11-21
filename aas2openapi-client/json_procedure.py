@@ -64,10 +64,6 @@ client = client.Client(base_url="http://127.0.0.1:8000")
 
 process_data1 = put_new_process_data(json_file)
 
-e = generate_unique_id()
-b = generate_unique_id()
-print(b)
-
 procedure_submodel = Procedure(
     id="bstring",
     id_short="ProcedureSubmodel",
@@ -77,4 +73,4 @@ procedure_submodel = Procedure(
 )
 
 
-# put_sync(client=client, item_id="12string", json_body=procedure_submodel)
+put_sync(client=client, item_id="12string", json_body=procedure_submodel)

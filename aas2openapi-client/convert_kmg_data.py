@@ -3,6 +3,7 @@ import os
 from services.convert_timestamp_in_str import convert_timestamp_in_str
 from services.set_warning_control_limit import *
 from services.txtEinlesen import getValuefromColumName
+from services.id_generator import generate_unique_id
 
 from aas2openapi_client.api.quality_data_aas import put_item_quality_data_aas_item_id_quality_data_put
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_quality_data_get import sync
@@ -25,7 +26,7 @@ def put_kmg_data(dateipfad, breakpoint):
 
         #  new values results SubmodelElementCollections
         new_result = NewResults(
-            id_short="result" + str(i),
+            id_short=generate_unique_id(),
             semantic_id="http://www.google.de/1",  # Platzhalter
             description="This are new measurement datas.",
             measurement_date=convert_timestamp_in_str(os.path.getctime(dateipfad)),
@@ -42,14 +43,14 @@ def put_kmg_data(dateipfad, breakpoint):
 
         #  results SubmodelElementCollections
         result = Result(
-            id_short="Result",
+            id_short=generate_unique_id(),
             semantic_id="http://www.google.de/1",
             description="New measurement datas will be saved here.",
             new_results=[new_result],
         )
 
         quality_feature = QualityFeature(
-            id_short="qualityFeatureName" + str(i),
+            id_short=generate_unique_id(),
             semantic_id="http://www.google.de/1",
             description="xyz",
             feature_type=getValuefromColumName(dateipfad, "featureid", i),
@@ -81,7 +82,7 @@ def put_new_results(dateipfad, breakpoint, item_id, client):
             if quality_feature.feature_type == getValuefromColumName(dateipfad, "featureid", i):
                 value = float(getValuefromColumName(dateipfad, "actual", i))
                 new_result = NewResults(
-                    id_short="result" + str(i) + str(i),
+                    id_short=generate_unique_id(),
                     semantic_id="http://www.google.de/1",
                     description="This are new measurement datas.",
                     measurement_date=convert_timestamp_in_str(os.path.getctime(dateipfad)),
