@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/QualityDataModellPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QualityDataModellPython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_values_process_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_values_process_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/procedure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/process_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/process_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_feature.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/json_procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/json_procedure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/put_client_put_KMG_data_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/put_client_put_KMG_data_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/put_client_put_new_results_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/put_client_put_new_results_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/procedure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/quality.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/quality.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/set_warning_control_limit.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/set_warning_control_limit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,29 +33,29 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2TiMvnDGD7QqphOKZtYrp35gzT8" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kim0_/QualityDataModellPython/aas2openapi-client&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/kim0_/AutomatedQualityControl",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kim0_\QualityDataModellPython\aas2openapi-client" />
@@ -252,6 +244,7 @@
       <workItem from="1700062530604" duration="1796000" />
       <workItem from="1700121962649" duration="4002000" />
       <workItem from="1700469820481" duration="513000" />
+      <workItem from="1700554539642" duration="984000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -397,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699887620769</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=".">
+      <option name="closed" value="true" />
+      <created>1700554629843</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700554629844</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,9 +417,9 @@
     <MESSAGE value="testQualityData.py aktualisiert, sodass middleware in Docker läuft" />
     <MESSAGE value="qualityDataListen.py camelCase / underscore-seperated Konvention angepasst" />
     <MESSAGE value="update aas2openapi" />
-    <MESSAGE value="." />
     <MESSAGE value="update models, put KMG_data working, put_Körperschall_data TimeoutError" />
-    <option name="LAST_COMMIT_MESSAGE" value="update models, put KMG_data working, put_Körperschall_data TimeoutError" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
