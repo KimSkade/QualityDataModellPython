@@ -112,6 +112,8 @@ def load_kmp_data_in_aas(dateipfad, breakpoint, item_id, client):
     if quality_data.quality_feature.__len__() == 1:
         quality_data.quality_feature = put_kmg_data(dateipfad=dateipfad, breakpoint=breakpoint)
         put_item_quality_data_aas_item_id_quality_data_put.sync(item_id=item_id, client=client, json_body=quality_data)
-    else:
+    elif quality_data.quality_feature.__len__() > 1:
         put_new_results(dateipfad=dateipfad, breakpoint=breakpoint, item_id=item_id, client=client)
     # sync destailed benutzen und je nach response handeln
+
+

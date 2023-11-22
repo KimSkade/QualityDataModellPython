@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../AutomatedQualityControl/.idea/AutomatedQualityControl.iml" filepath="$PROJECT_DIR$/../AutomatedQualityControl/.idea/AutomatedQualityControl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/QualityDataModellPython.iml" filepath="$PROJECT_DIR$/.idea/QualityDataModellPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TeamprojektWBK/.idea/TeamprojektWBK.iml" filepath="$PROJECT_DIR$/../TeamprojektWBK/.idea/TeamprojektWBK.iml" />
     </modules>
   </component>
 </project>

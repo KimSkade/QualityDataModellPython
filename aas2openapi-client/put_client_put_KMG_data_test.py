@@ -22,7 +22,14 @@ client = client.Client(base_url="http://127.0.0.1:8000")
 
 from aas2openapi_client.api.quality_data_aas.put_item_quality_data_aas_item_id_quality_data_put import sync
 
-sync(client=client, item_id="12string", json_body=quality_data_submodel)
+# sync(client=client, item_id="12string", json_body=quality_data_submodel)
+
+from convert_kmg_data import load_kmp_data_in_aas
+
+load_kmp_data_in_aas(dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_16.txt", client=client, item_id="12string", breakpoint="END")
+
+
+
 
 # my_data: models.QualityDataAAS = sync(client=client)
 # response: Response[models.QualityDataAAS] = sync_detailed(client=client)
