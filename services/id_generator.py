@@ -14,10 +14,7 @@ def generate_unique_id():
         # Füge einen Buchstaben als Präfix hinzu (Constraint AASd-002)
         cleaned_id = 'a' + cleaned_id[1:] if cleaned_id[0].isdigit() else cleaned_id
 
-        # Beschränke die Länge der ID (optional)
-        cleaned_id = cleaned_id[:20]  # Zum Beispiel auf 20 Zeichen begrenzen
-
         return cleaned_id
     else:
         # Wenn die ID leer ist, versuche erneut (rekursiver Aufruf)
-        return generate_persistent_id()
+        return generate_unique_id()

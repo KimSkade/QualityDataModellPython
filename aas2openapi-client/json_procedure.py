@@ -3,6 +3,7 @@ from services.JSONeinlesen import load_features_from_json, timestamp_from_json
 from services.id_generator import generate_unique_id
 
 from aas2openapi_client.models import *
+from aas2openapi_client import client
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_procedure_get import sync as get_sync
 from aas2openapi_client.api.quality_data_aas.put_item_quality_data_aas_item_id_procedure_put import sync as put_sync
 
@@ -55,10 +56,18 @@ def put_new_values_process_data(json_file, item_id, client):
     put_sync(item_id=item_id, client=client, json_body=procedure_submodel)
 
 
+def load_sensor_features_in_aas(json_file, item_id, client):
+    procedure_submodel: Procedure = get_sync(item_id=item_id, client=client)
+    if procedure_submodel.process_data.features_list.__len__() == 1:
+        procedure_submodel.process_data = put_new_process_data(json_file=json_file)
+        put_sync(item_id=item_id, client=client, json_body=procedure_submodel)
+    # wenn features_type_liste schon Werte:
+    elif procedure_submodel.process_data.new_values.__len__() > 1:
+        put_new_process_data(procedure_submodel)
+    # sync detailed benutzen und je nach response handeln
+
+
 json_file = "10785.json"
-
-from aas2openapi_client import client
-
 client = client.Client(base_url="http://127.0.0.1:8000")
 
 
