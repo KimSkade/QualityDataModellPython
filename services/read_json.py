@@ -22,18 +22,3 @@ def timestamp_from_json(json_file):
     return timestamp
 
 
-#json_file = "10785.json"
-# loaded_features = load_features_from_json(json_file)
-# print(loaded_features)
-# print(timestamp_from_json(json_file))
-
-
-# maximale_Amplitude = loaded_features[0].get("Maximale_Amplitude_Rohsignal_0.0bis18.9s")
-# print(maximale_Amplitude)
-
-
-# if loaded_features:
-    # features_data = loaded_features[0]
-    # for feature_name, feature_value in features_data.items():
-        # print(f"{feature_name}: {feature_value}")
-        

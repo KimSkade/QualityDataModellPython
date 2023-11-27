@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../AutomatedQualityControl/aas2openapi-client/dataframe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutomatedQualityControl/Anwendungen/quality_logic.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/PruefplanValidierungsbauteil1_16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/PruefplanValidierungsbauteil1_17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/json_procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/json_procedure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/put_client_put_KMG_data_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/put_client_put_KMG_data_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/JSONeinlesen.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/read_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/KMGdata_to_QualityData.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/txtEinlesen.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/read_txt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/10785.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/read_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/read_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +261,7 @@
       <workItem from="1700900070115" duration="6583000" />
       <workItem from="1701089309752" duration="2388000" />
       <workItem from="1701097267428" duration="1302000" />
-      <workItem from="1701114534185" duration="796000" />
+      <workItem from="1701114534185" duration="985000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -495,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700665725441</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="dataframe, cleaning">
+      <option name="closed" value="true" />
+      <created>1701115743695</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701115743695</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +522,8 @@
     <MESSAGE value="start_api.py hinzugefügt &amp; aas2openapi-client generiert" />
     <MESSAGE value="ID fixes" />
     <MESSAGE value="sensor Kombi-Methode" />
-    <option name="LAST_COMMIT_MESSAGE" value="sensor Kombi-Methode" />
+    <MESSAGE value="dataframe, cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="dataframe, cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
