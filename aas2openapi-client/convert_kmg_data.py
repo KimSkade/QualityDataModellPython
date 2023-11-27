@@ -2,7 +2,7 @@ import os
 
 from services.convert_timestamp_in_str import convert_timestamp_in_str
 from services.set_warning_control_limit import *
-from services.txtEinlesen import getValuefromColumName
+from services.read_txt import getValuefromColumName
 from services.id_generator import generate_unique_id
 
 from aas2openapi_client.api.quality_data_aas import put_item_quality_data_aas_item_id_quality_data_put

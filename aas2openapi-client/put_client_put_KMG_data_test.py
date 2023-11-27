@@ -26,7 +26,7 @@ from aas2openapi_client.api.quality_data_aas.put_item_quality_data_aas_item_id_q
 
 from convert_kmg_data import load_kmp_data_in_aas
 
-load_kmp_data_in_aas(dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_16.txt", client=client, item_id="12string", breakpoint="END")
+load_kmp_data_in_aas(dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_17.txt", client=client, item_id="12string", breakpoint="END")
 
 
 

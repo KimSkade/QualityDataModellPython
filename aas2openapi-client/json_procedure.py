@@ -1,5 +1,5 @@
 from services.convert_timestamp_in_str import convert_timestamp_in_str
-from services.JSONeinlesen import load_features_from_json, timestamp_from_json
+from services.read_json import load_features_from_json, timestamp_from_json
 from services.id_generator import generate_unique_id
 
 from aas2openapi_client.models import *
