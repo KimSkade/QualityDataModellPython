@@ -21,4 +21,3 @@ def timestamp_from_json(json_file):
         timestamp = data["t"]
     return timestamp
 
-
