@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/client.py" afterDir="false" />
-    </list>
+    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,7 +263,7 @@
       <workItem from="1701851585314" duration="438000" />
       <workItem from="1701872837181" duration="1638000" />
       <workItem from="1701952143301" duration="1395000" />
-      <workItem from="1701973245248" duration="295000" />
+      <workItem from="1701973245248" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -524,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701851937218</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Anpassen Timeout">
+      <option name="closed" value="true" />
+      <created>1701973850120</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701973850120</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +559,8 @@
     <MESSAGE value="dataframe, cleaning" />
     <MESSAGE value="cleaning" />
     <MESSAGE value="test andere Repos entfernt" />
-    <option name="LAST_COMMIT_MESSAGE" value="test andere Repos entfernt" />
+    <MESSAGE value="Anpassen Timeout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anpassen Timeout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
