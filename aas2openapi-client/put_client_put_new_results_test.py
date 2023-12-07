@@ -11,7 +11,7 @@ client = client.Client(base_url="http://127.0.0.1:8000")
 from convert_kmg_data import put_new_results
 
 test = put_new_results(
-    dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_17.txt",
+    dateipfad="C:/Users/Student/Desktop/PruefplanValidierungsbauteil1_16.txt",
     client=client,
     item_id="12string",
     breakpoint="END",
