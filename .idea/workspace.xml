@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="" />
+    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/QualityDataModellPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QualityDataModellPython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_api.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,28 +45,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kim0_/Projekt1_QualityDataModel&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/kim0_/Projekt1_QualityDataModel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kim0_\AutomatedQualityControl\aas2openapi-client" />
@@ -74,8 +83,8 @@
       <recent name="C:\Users\kim0_\QualityDataModellPython\services" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.put_client_put_KMG_data_test (1)">
-    <configuration name="data_reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.start_api">
+    <configuration name="dataframe (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutomatedQualityControl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,7 +97,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\kim0_\AutomatedQualityControl\aas2openapi-client\data_reader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AutomatedQualityControl/aas2openapi-client/dataframe.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,28 +120,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AutomatedQualityControl/Anwendungen/dataframe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AutomatedQualityControl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AutomatedQualityControl/aas2openapi-client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AutomatedQualityControl/aas2openapi-client/get_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,6 +172,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="start_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QualityDataModellPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile">
       <deployment type="dockerfile">
         <settings>
@@ -195,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.put_client_put_KMG_data_test (1)" />
+        <item itemvalue="Python.start_api" />
+        <item itemvalue="Python.dataframe (1)" />
         <item itemvalue="Python.json_procedure" />
-        <item itemvalue="Python.data_reader" />
+        <item itemvalue="Python.put_client_put_KMG_data_test (1)" />
         <item itemvalue="Python.dataframe" />
-        <item itemvalue="Python.get_test" />
       </list>
     </recent_temporary>
   </component>
@@ -257,13 +266,7 @@
       <workItem from="1700900070115" duration="6583000" />
       <workItem from="1701089309752" duration="2388000" />
       <workItem from="1701097267428" duration="1302000" />
-      <workItem from="1701114534185" duration="1828000" />
-      <workItem from="1701172970224" duration="2770000" />
-      <workItem from="1701191376250" duration="897000" />
-      <workItem from="1701851585314" duration="438000" />
-      <workItem from="1701872837181" duration="1638000" />
-      <workItem from="1701952143301" duration="1395000" />
-      <workItem from="1701973245248" duration="613000" />
+      <workItem from="1701114534185" duration="985000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -497,39 +500,7 @@
       <option name="project" value="LOCAL" />
       <updated>1701115743695</updated>
     </task>
-    <task id="LOCAL-00030" summary="cleaning">
-      <option name="closed" value="true" />
-      <created>1701116103051</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1701116103051</updated>
-    </task>
-    <task id="LOCAL-00031" summary="test andere Repos entfernt">
-      <option name="closed" value="true" />
-      <created>1701851697148</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1701851697148</updated>
-    </task>
-    <task id="LOCAL-00032" summary="test andere Repos entfernt">
-      <option name="closed" value="true" />
-      <created>1701851937218</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1701851937218</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Anpassen Timeout">
-      <option name="closed" value="true" />
-      <created>1701973850120</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1701973850120</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,14 +528,16 @@
     <MESSAGE value="ID fixes" />
     <MESSAGE value="sensor Kombi-Methode" />
     <MESSAGE value="dataframe, cleaning" />
-    <MESSAGE value="cleaning" />
-    <MESSAGE value="test andere Repos entfernt" />
-    <MESSAGE value="Anpassen Timeout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anpassen Timeout" />
+    <option name="LAST_COMMIT_MESSAGE" value="dataframe, cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/read_json.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py</url>
           <line>78</line>
@@ -608,6 +581,7 @@
     <SUITE FILE_PATH="coverage/QualityDataModellPython$postClient.coverage" NAME="postClient Coverage Results" MODIFIED="1698744622541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$put_client_procedure__1_.coverage" NAME="put_client_procedure (1) Coverage Results" MODIFIED="1699882270220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$put_client_put_KMG_data_test__1_.coverage" NAME="put_client_put_KMG_data_test (1) Coverage Results" MODIFIED="1701874430585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$start_api.coverage" NAME="start_api Coverage Results" MODIFIED="1702331854542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$testPost.coverage" NAME="testPost Coverage Results" MODIFIED="1695129017155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$submodel_client.coverage" NAME="submodel_client Coverage Results" MODIFIED="1698415936375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi/client" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$dataframe__1_.coverage" NAME="dataframe (1) Coverage Results" MODIFIED="1701091216655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../AutomatedQualityControl/aas2openapi-client" />
