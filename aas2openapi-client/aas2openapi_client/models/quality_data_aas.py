@@ -16,27 +16,58 @@ T = TypeVar("T", bound="QualityDataAAS")
 
 @attr.s(auto_attribs=True)
 class QualityDataAAS:
-    """
-    Attributes:
-        id (str):
-        quality_data (QualityData):
-        procedure (Procedure):
-        resource (Resource):
-        production_times (ProductionTimes):
-        description (Union[Unset, str]):
-        id_short (Union[Unset, str]):
+    """Base class for all Asset Administration Shells (AAS).
+
+    Args:
+        id (str): Global id of the object.
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            id (str):
+            quality_data (QualityData): Base class for all submodels.
+
+                Args:
+                    id (str): Global id of the object.
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            procedure (Procedure): Base class for all submodels.
+
+                Args:
+                    id (str): Global id of the object.
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            resource (Resource): Base class for all submodels.
+
+                Args:
+                    id (str): Global id of the object.
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            production_times (ProductionTimes): Base class for all submodels.
+
+                Args:
+                    id (str): Global id of the object.
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            description (Union[Unset, str]):
     """
 
+    id_short: str
     id: str
     quality_data: "QualityData"
     procedure: "Procedure"
     resource: "Resource"
     production_times: "ProductionTimes"
     description: Union[Unset, str] = UNSET
-    id_short: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
+        id_short = self.id_short
         id = self.id
         quality_data = self.quality_data.to_dict()
 
@@ -47,13 +78,13 @@ class QualityDataAAS:
         production_times = self.production_times.to_dict()
 
         description = self.description
-        id_short = self.id_short
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
         field_dict.update(
             {
-                "id_": id,
+                "id_short": id_short,
+                "id": id,
                 "quality_data": quality_data,
                 "procedure": procedure,
                 "resource": resource,
@@ -62,8 +93,6 @@ class QualityDataAAS:
         )
         if description is not UNSET:
             field_dict["description"] = description
-        if id_short is not UNSET:
-            field_dict["id_short"] = id_short
 
         return field_dict
 
@@ -75,7 +104,9 @@ class QualityDataAAS:
         from ..models.resource import Resource
 
         d = src_dict.copy()
-        id = d.pop("id_")
+        id_short = d.pop("id_short")
+
+        id = d.pop("id")
 
         quality_data = QualityData.from_dict(d.pop("quality_data"))
 
@@ -87,16 +118,14 @@ class QualityDataAAS:
 
         description = d.pop("description", UNSET)
 
-        id_short = d.pop("id_short", UNSET)
-
         quality_data_aas = cls(
+            id_short=id_short,
             id=id,
             quality_data=quality_data,
             procedure=procedure,
             resource=resource,
             production_times=production_times,
             description=description,
-            id_short=id_short,
         )
 
         quality_data_aas.additional_properties = d

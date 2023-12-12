@@ -1,9 +1,9 @@
 import os
 
 from services.convert_timestamp_in_str import convert_timestamp_in_str
-from services.set_warning_control_limit import *
-from services.read_txt import getValuefromColumName
 from services.id_generator import generate_unique_id
+from services.read_txt import getValuefromColumName
+from services.set_warning_control_limit import *
 
 from aas2openapi_client.api.quality_data_aas import put_item_quality_data_aas_item_id_quality_data_put
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_quality_data_get import sync
@@ -115,5 +115,3 @@ def load_kmp_data_in_aas(dateipfad, breakpoint, item_id, client):
     elif quality_data.quality_feature.__len__() > 1:
         put_new_results(dateipfad=dateipfad, breakpoint=breakpoint, item_id=item_id, client=client)
     # sync detailed benutzen und je nach response handeln
-
-

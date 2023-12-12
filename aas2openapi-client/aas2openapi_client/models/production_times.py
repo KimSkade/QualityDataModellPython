@@ -13,23 +13,31 @@ T = TypeVar("T", bound="ProductionTimes")
 
 @attr.s(auto_attribs=True)
 class ProductionTimes:
-    """
-    Attributes:
-        id (str):
-        part_production_times (List['PartProductionTime']):
-        description (Union[Unset, str]):
-        id_short (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
+    """Base class for all submodels.
+
+    Args:
+        id (str): Global id of the object.
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            id (str):
+            part_production_times (List['PartProductionTime']):
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
     """
 
+    id_short: str
     id: str
     part_production_times: List["PartProductionTime"]
     description: Union[Unset, str] = UNSET
-    id_short: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
+        id_short = self.id_short
         id = self.id
         part_production_times = []
         for part_production_times_item_data in self.part_production_times:
@@ -38,21 +46,19 @@ class ProductionTimes:
             part_production_times.append(part_production_times_item)
 
         description = self.description
-        id_short = self.id_short
         semantic_id = self.semantic_id
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
         field_dict.update(
             {
-                "id_": id,
+                "id_short": id_short,
+                "id": id,
                 "part_production_times": part_production_times,
             }
         )
         if description is not UNSET:
             field_dict["description"] = description
-        if id_short is not UNSET:
-            field_dict["id_short"] = id_short
         if semantic_id is not UNSET:
             field_dict["semantic_id"] = semantic_id
 
@@ -63,7 +69,9 @@ class ProductionTimes:
         from ..models.part_production_time import PartProductionTime
 
         d = src_dict.copy()
-        id = d.pop("id_")
+        id_short = d.pop("id_short")
+
+        id = d.pop("id")
 
         part_production_times = []
         _part_production_times = d.pop("part_production_times")
@@ -74,15 +82,13 @@ class ProductionTimes:
 
         description = d.pop("description", UNSET)
 
-        id_short = d.pop("id_short", UNSET)
-
         semantic_id = d.pop("semantic_id", UNSET)
 
         production_times = cls(
+            id_short=id_short,
             id=id,
             part_production_times=part_production_times,
             description=description,
-            id_short=id_short,
             semantic_id=semantic_id,
         )
 

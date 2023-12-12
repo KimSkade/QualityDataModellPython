@@ -1,11 +1,11 @@
 from services.convert_timestamp_in_str import convert_timestamp_in_str
-from services.read_json import load_features_from_json, timestamp_from_json
 from services.id_generator import generate_unique_id
+from services.read_json import load_features_from_json, timestamp_from_json
 
-from aas2openapi_client.models import *
 from aas2openapi_client import client
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_procedure_get import sync as get_sync
 from aas2openapi_client.api.quality_data_aas.put_item_quality_data_aas_item_id_procedure_put import sync as put_sync
+from aas2openapi_client.models import *
 
 
 def put_new_process_data(json_file):
@@ -36,7 +36,7 @@ def put_new_process_data(json_file):
 
 
 def put_new_values_process_data(json_file, item_id, client):
-    procedure_submodel=get_sync(item_id=item_id, client=client)
+    procedure_submodel = get_sync(item_id=item_id, client=client)
 
     loaded_features = load_features_from_json(json_file)
     features_data = loaded_features[0]
@@ -72,7 +72,7 @@ client = client.Client(base_url="http://127.0.0.1:8000")
 
 
 process_data1 = put_new_process_data(json_file)
-
+print(process_data1)
 procedure_submodel = Procedure(
     id="bstring",
     id_short="ProcedureSubmodel",
