@@ -28,7 +28,7 @@ def put_new_process_data(json_file):
         id_short=generate_unique_id(),
         semantic_id="http://www.google.de/1",
         description="Here new process data will be saved.",
-        process_data_resource="",
+        process_data_resource="Platzhalter",
         features_list=feature_type_list,
         new_values=[new_value_process_data],
     )
@@ -67,14 +67,14 @@ def load_sensor_features_in_aas(json_file, item_id, client):
     # sync detailed benutzen und je nach response handeln
 
 
-json_file = "10785.json"
+json_file = "0574_selected_features.json"
 client = client.Client(base_url="http://127.0.0.1:8000")
 
 
 process_data1 = put_new_process_data(json_file)
 print(process_data1)
 procedure_submodel = Procedure(
-    id="bstring",
+    id="istring",
     id_short="ProcedureSubmodel",
     description="xyz",
     semantic_id="http://www.google.de/1",
