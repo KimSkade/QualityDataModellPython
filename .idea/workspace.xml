@@ -267,7 +267,7 @@
       <workItem from="1701097267428" duration="1302000" />
       <workItem from="1701114534185" duration="985000" />
       <workItem from="1702334471225" duration="2781000" />
-      <workItem from="1702372621705" duration="5322000" />
+      <workItem from="1702372621705" duration="5622000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -525,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702383054630</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="test teamprojekt json">
+      <option name="closed" value="true" />
+      <created>1702384096853</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702384096853</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +597,7 @@
     <SUITE FILE_PATH="coverage/QualityDataModellPython$einfacherTestToServer.coverage" NAME="einfacherTestToServer Coverage Results" MODIFIED="1695235232322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$startAPI.coverage" NAME="startAPI Coverage Results" MODIFIED="1696947105978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$convert_kmg_data.coverage" NAME="convert_kmg_data Coverage Results" MODIFIED="1700234291227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
-    <SUITE FILE_PATH="coverage/QualityDataModellPython$json_procedure.coverage" NAME="json_procedure Coverage Results" MODIFIED="1702383739221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
+    <SUITE FILE_PATH="coverage/QualityDataModellPython$json_procedure.coverage" NAME="json_procedure Coverage Results" MODIFIED="1702383811152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aas2openapi-client" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$processAttributes.coverage" NAME="processAttributes Coverage Results" MODIFIED="1694768688771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$dataframe.coverage" NAME="dataframe Coverage Results" MODIFIED="1700666479770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../AutomatedQualityControl/Anwendungen" />
     <SUITE FILE_PATH="coverage/QualityDataModellPython$postRequest.coverage" NAME="postRequest Coverage Results" MODIFIED="1695234224922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
