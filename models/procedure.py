@@ -3,6 +3,7 @@ from typing import Optional, List
 
 
 class NewValuesProcessData(SubmodelElementCollection):
+    part_counter: str
     timestamp: str
     values: List[float]
 

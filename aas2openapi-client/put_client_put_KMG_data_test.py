@@ -2,7 +2,9 @@ from aas2openapi_client import client
 from aas2openapi_client.models.quality_data import QualityData
 from convert_kmg_data import put_kmg_data
 
-quality_feature = put_kmg_data("C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_16.txt", "END")
+quality_feature = put_kmg_data(
+    "C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_16.txt", "END"
+)
 
 quality_data_submodel = QualityData(
     id="astring",

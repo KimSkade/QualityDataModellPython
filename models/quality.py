@@ -1,7 +1,6 @@
 from aas2openapi.models.base import AAS, Submodel, SubmodelElementCollection
 from models.procedure import Procedure
 from models.resource import Resource
-from models.production_times import ProductionTimes
 from typing import Optional, List
 
 
@@ -41,6 +40,5 @@ class QualityDataAAS(AAS):
     quality_data: QualityData
     procedure: Procedure
     resource: Resource
-    production_times: ProductionTimes
 
 

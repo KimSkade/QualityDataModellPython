@@ -1,6 +1,6 @@
 from services.convert_timestamp_in_str import convert_timestamp_in_str
 from services.id_generator import generate_unique_id
-from services.read_json import load_features_from_json, timestamp_from_json
+from services.read_json import load_features_from_json, timestamp_from_json, part_counter_from_json
 
 from aas2openapi_client import client
 from aas2openapi_client.api.quality_data_aas.get_item_quality_data_aas_item_id_procedure_get import sync as get_sync
@@ -21,6 +21,7 @@ def put_new_process_data(json_file):
         id_short=generate_unique_id(),
         semantic_id="http://www.google.de/1",
         description="This are new process datas.",
+        part_counter=part_counter_from_json(json_file),
         timestamp=convert_timestamp_in_str(timestamp_from_json(json_file) / 1000),
         values=feature_value_list,
     )

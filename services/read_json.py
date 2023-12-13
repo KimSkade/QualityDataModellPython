@@ -21,3 +21,10 @@ def timestamp_from_json(json_file):
         timestamp = data["t"]
     return timestamp
 
+
+def part_counter_from_json(json_file):
+    with open(json_file, "r") as file:
+        data = json.load(file)
+    if "d" in data and "qass_nr" in data["d"]:
+        part_counter = data["t"]
+    return part_counter

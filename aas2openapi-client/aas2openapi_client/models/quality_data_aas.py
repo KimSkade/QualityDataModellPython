@@ -6,7 +6,6 @@ from ..types import UNSET, Unset
 
 if TYPE_CHECKING:
     from ..models.procedure import Procedure
-    from ..models.production_times import ProductionTimes
     from ..models.quality_data import QualityData
     from ..models.resource import Resource
 
@@ -47,13 +46,6 @@ class QualityDataAAS:
                     id_short (str): Local id of the object.
                     description (str, optional): Description of the object. Defaults to None.
                     semantic_id (str, optional): Semantic id of the object. Defaults to None.
-            production_times (ProductionTimes): Base class for all submodels.
-
-                Args:
-                    id (str): Global id of the object.
-                    id_short (str): Local id of the object.
-                    description (str, optional): Description of the object. Defaults to None.
-                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
             description (Union[Unset, str]):
     """
 
@@ -62,7 +54,6 @@ class QualityDataAAS:
     quality_data: "QualityData"
     procedure: "Procedure"
     resource: "Resource"
-    production_times: "ProductionTimes"
     description: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
@@ -75,8 +66,6 @@ class QualityDataAAS:
 
         resource = self.resource.to_dict()
 
-        production_times = self.production_times.to_dict()
-
         description = self.description
 
         field_dict: Dict[str, Any] = {}
@@ -88,7 +77,6 @@ class QualityDataAAS:
                 "quality_data": quality_data,
                 "procedure": procedure,
                 "resource": resource,
-                "production_times": production_times,
             }
         )
         if description is not UNSET:
@@ -99,7 +87,6 @@ class QualityDataAAS:
     @classmethod
     def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
         from ..models.procedure import Procedure
-        from ..models.production_times import ProductionTimes
         from ..models.quality_data import QualityData
         from ..models.resource import Resource
 
@@ -114,8 +101,6 @@ class QualityDataAAS:
 
         resource = Resource.from_dict(d.pop("resource"))
 
-        production_times = ProductionTimes.from_dict(d.pop("production_times"))
-
         description = d.pop("description", UNSET)
 
         quality_data_aas = cls(
@@ -124,7 +109,6 @@ class QualityDataAAS:
             quality_data=quality_data,
             procedure=procedure,
             resource=resource,
-            production_times=production_times,
             description=description,
         )
 

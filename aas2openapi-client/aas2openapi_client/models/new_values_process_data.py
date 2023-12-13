@@ -18,6 +18,7 @@ class NewValuesProcessData:
 
         Attributes:
             id_short (str):
+            part_counter (str):
             timestamp (str):
             values (List[float]):
             description (Union[Unset, str]):
@@ -25,6 +26,7 @@ class NewValuesProcessData:
     """
 
     id_short: str
+    part_counter: str
     timestamp: str
     values: List[float]
     description: Union[Unset, str] = UNSET
@@ -33,6 +35,7 @@ class NewValuesProcessData:
 
     def to_dict(self) -> Dict[str, Any]:
         id_short = self.id_short
+        part_counter = self.part_counter
         timestamp = self.timestamp
         values = self.values
 
@@ -44,6 +47,7 @@ class NewValuesProcessData:
         field_dict.update(
             {
                 "id_short": id_short,
+                "part_counter": part_counter,
                 "timestamp": timestamp,
                 "values": values,
             }
@@ -60,6 +64,8 @@ class NewValuesProcessData:
         d = src_dict.copy()
         id_short = d.pop("id_short")
 
+        part_counter = d.pop("part_counter")
+
         timestamp = d.pop("timestamp")
 
         values = cast(List[float], d.pop("values"))
@@ -70,6 +76,7 @@ class NewValuesProcessData:
 
         new_values_process_data = cls(
             id_short=id_short,
+            part_counter=part_counter,
             timestamp=timestamp,
             values=values,
             description=description,
