@@ -115,3 +115,15 @@ def load_kmp_data_in_aas(dateipfad, breakpoint, item_id, client):
     elif quality_data.quality_feature.__len__() > 1:
         put_new_results(dateipfad=dateipfad, breakpoint=breakpoint, item_id=item_id, client=client)
     # sync detailed benutzen und je nach response handeln
+
+
+# example
+# KMG Daten auf AAS
+from aas2openapi_client import client
+client = client.Client(base_url="http://127.0.0.1:8000")
+load_kmp_data_in_aas(
+    dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_17.txt",
+    client=client,
+    item_id="12string",
+    breakpoint="END",
+)
