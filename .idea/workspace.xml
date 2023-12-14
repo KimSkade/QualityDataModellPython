@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="update models, update client">
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/aas_post.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/convert_kmg_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/put_client_put_KMG_data_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/post_aas_put_kmg_data_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/put_client_put_new_results_test.py" beforeDir="false" />
+    <list default="true" id="4995a4a1-231a-48a3-9615-ba49cce570e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aas2openapi-client/PruefplanValidierungsbauteil1_16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/post_aas_put_kmg_sensor_data_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/post_aas_put_kmg_sensor_data_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +70,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kim0_\QualityDataModellPython\aas2openapi-client" />
+      <recent name="C:\Users\kim0_\QualityDataModellPython" />
       <recent name="C:\Users\kim0_\QualityDataModellPython\data" />
       <recent name="C:\Users\kim0_\AutomatedQualityControl\aas2openapi-client" />
       <recent name="C:\Users\kim0_\TeamprojektWBK\01_AAS" />
-      <recent name="C:\Users\kim0_\QualityDataModellPython\tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kim0_\QualityDataModellPython\services\data" />
@@ -274,6 +272,7 @@
       <workItem from="1702453671483" duration="2200000" />
       <workItem from="1702458398464" duration="2377000" />
       <workItem from="1702486104163" duration="5608000" />
+      <workItem from="1702540446878" duration="460000" />
     </task>
     <task id="LOCAL-00001" summary="test Server">
       <option name="closed" value="true" />
@@ -555,14 +554,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702454778295</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="example post aas">
+      <option name="closed" value="true" />
+      <created>1702540660745</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702540660745</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test Server" />
     <MESSAGE value="hinzufügen .env-Datei" />
     <MESSAGE value="docker" />
     <MESSAGE value="post request" />
@@ -587,7 +593,8 @@
     <MESSAGE value="docker-compose.yaml" />
     <MESSAGE value="test teamprojekt json" />
     <MESSAGE value="update models, update client" />
-    <option name="LAST_COMMIT_MESSAGE" value="update models, update client" />
+    <MESSAGE value="example post aas" />
+    <option name="LAST_COMMIT_MESSAGE" value="example post aas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
