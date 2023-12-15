@@ -119,11 +119,11 @@ def load_kmp_data_in_aas(dateipfad, breakpoint, item_id, client):
 
 # example
 # KMG Daten auf AAS
-from aas2openapi_client import client
-client = client.Client(base_url="http://127.0.0.1:8000")
-load_kmp_data_in_aas(
-    dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_17.txt",
-    client=client,
-    item_id="12string",
-    breakpoint="END",
-)
+# from aas2openapi_client import client
+# client = client.Client(base_url="http://127.0.0.1:8000")
+# load_kmp_data_in_aas(
+   # dateipfad="C:/Users/kim0_/OneDrive/Dokumente/Masterarbeit/PruefplanValidierungsbauteil1_17.txt",
+   # client=client,
+   # item_id="12string",
+   # breakpoint="END",
+# )

@@ -24,7 +24,7 @@ aas_post = QualityDataAAS(
     id_short=generate_unique_id(),
     description='',
     id=generate_unique_id(),
-    quality_feature= put_kmg_data(dateipfad="PruefplanValidierungsbauteil1_16.txt", breakpoint='END'),
+    quality_feature=put_kmg_data(dateipfad="PruefplanValidierungsbauteil1_16.txt", breakpoint='END'),
   ),
   procedure=Procedure(
     id_short=generate_unique_id(),
